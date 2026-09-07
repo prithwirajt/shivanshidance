@@ -355,8 +355,23 @@ code { background: rgba(107,26,26,0.08); padding: 1px 6px; border-radius: 4px; f
   }
   .nav-links.open { transform: translateX(0); }
   .nav-toggle { display: block; }
-  .hero { justify-content: center; }
-  .hero-content { text-align: center; padding: 6rem 1.5rem 4rem; }
+  /* Give the photograph its own space so text never covers Sia's face. */
+  .hero {
+    display: flex; flex-direction: column; justify-content: flex-start;
+    min-height: 0; padding-top: 76px; background: #2d0c0c;
+  }
+  .hero-bg {
+    position: relative; inset: auto; width: 100%;
+    height: clamp(340px, 95vw, 560px); flex-shrink: 0;
+    background-size: cover; background-position: left top;
+    transform: none;
+  }
+  .hero-overlay { display: none; }
+  .hero-content {
+    width: 100%; max-width: 620px; text-align: center;
+    padding: 2rem 1.5rem 4rem;
+  }
+  .hero-tag { margin-left: auto; margin-right: auto; }
   .hero-meta { justify-content: center; }
   .hero-actions, .countdown { justify-content: center; }
   .about-grid, .guru-grid, .event-extra { grid-template-columns: 1fr; }
@@ -371,3 +386,4 @@ code { background: rgba(107,26,26,0.08); padding: 1px 6px; border-radius: 4px; f
   .hero-divider { display: none; }
   .rsvp-form, .margam { padding: 1.5rem; }
 }
+
