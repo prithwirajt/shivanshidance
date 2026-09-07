@@ -1,60 +1,58 @@
-# 🌸 Sia's Arangetram Website — Guide
+# Sia’s Arangetram — editor guide
 
-A single-page website celebrating **Shivanshi "Sia" Thakur's** Bharatanatyam Arangetram.
-**April 24, 2027 · 4:00 PM · Fairview Library, Toronto.**
+## Confirmed event details
 
-## 📁 Files
-| File | What it's for |
-|------|---------------|
-| `index.html` | All the page content & structure |
-| `styles.css` | Colours, fonts, layout (maroon & gold theme) |
-| `script.js` | Countdown, RSVP form, guest list, search & language switching |
-| `i18n.js` | **All English + Bengali (বাংলা) translations** |
-| `images/` | Put all your photos here |
+- Saturday, April 24, 2027, Toronto local time.
+- 4:00–4:30 PM: guest arrival, welcome and refreshments.
+- 4:30–7:30 PM: Arangetram including a 30-minute intermission.
+- Intermission start: TBA; do not invent a start time.
+- 8:00 PM onwards: vegetarian dinner.
+- Fairview Library Theatre, 35 Fairview Mall Drive, Toronto, ON M2J 4S4.
+- Musicians, special guest, final repertoire and parking guidance: TBA.
+- Address source: https://tpl.ca/locations/fv/
 
-## 🌐 English / Bengali language toggle
-- Click the **EN | বাং** button in the top navbar to switch the whole site instantly.
-- The choice is remembered on the visitor's device (so returning guests keep their language).
-- Bengali automatically uses beautiful Bengali-script fonts (Hind Siliguri + Baloo Da 2).
+## Editing
 
-### ✏️ To refine any Bengali (or English) wording
-Open **`i18n.js`**. Every line looks like:
-```
-event_food_h: { en: "Refreshments", bn: "আপ্যায়ন" },
-```
-Just edit the text inside the quotes — `en` for English, `bn` for Bengali.
-You can safely keep HTML tags like `<strong>`, `<em>`, `<br />`. That's it!
+Page structure and English fallback: `index.html`.
+English and Bengali copy: `i18n.js`. Update both, as JavaScript replaces the fallback text.
+Layout: `styles.css`. Interactions and countdown: `script.js`.
+Keep the existing hero photo and mobile photograph-above-text layout.
+No guest directory, sample names, attendee counts or public editor notes.
+Use visitor-facing “Coming soon” cards for future media. Do not show developer instructions.
 
-## ▶️ How to view it
-Just double-click `index.html` — it opens in any web browser. No setup needed.
+## Images
 
-## ✏️ How to refine it every day
-Everything you can edit is marked in the code with a **✎ pencil note**. Common edits:
+- `images/hero-dancer.jpeg`: approved hero, unchanged.
+- `images/sia-portrait.jpeg`: supplied Sia_1.jpeg, unchanged.
+- `images/sia-dance-2.jpeg` through `sia-dance-4.jpeg`: supplied portraits, unchanged.
+- `images/guru-sanjukta.jpg`: Dr. Sanjukta Banerjee’s photo from https://www.sanjuktabanerjee.org/.
+- Photos use natural proportions so faces, hands and feet are not cropped.
+- New rehearsal/event photos and the recording are pending; no invented media.
 
-### 1. Add your photos (replacing placeholders)
-- Drop photos into the `images/` folder.
-- **Sia's portrait:** name it `sia-portrait.jpg`, then in `index.html` replace the
-  `<div class="photo-placeholder portrait">…</div>` under *About Sia* with:
-  `<img src="images/sia-portrait.jpg" alt="Sia" style="width:100%;border-radius:16px" />`
-- Do the same for the Guru photo (`guru-sanjukta.jpg`) and gallery tiles.
+## RSVP — activation still requires the event details
 
-### 2. Update the guest list (250+ names)
-Open `script.js`, find `GUEST_LIST = [ … ]` near the top, and paste your real names.
-The built-in **search box** and **live counter** work automatically.
+The previous form only saved names in each guest’s browser and showed a false confirmation. It has been removed, along with guest-list rendering. No RSVP personal data is collected in the pending state.
 
-### 3. After the event — add the YouTube recording
-In `index.html`, find the *Gallery* section. Delete the `video-placeholder` block and
-un-comment the `<iframe>` just below it, replacing `VIDEO_ID` with your YouTube video ID.
+`site-config.js` contains an empty `eventbriteUrl`. Once the organizer provides and verifies the actual HTTPS Eventbrite event URL, set that value. The page then reveals the Eventbrite registration link. It never displays a submission-success message when someone merely opens that link. Until then it honestly says registration is not open.
 
-### 4. Make the RSVP form save responses for real
-Right now RSVPs show a thank-you message and appear in the guest list on that device.
-To collect them permanently, connect a free service (Formspree / Google Forms / Netlify Forms).
-There's a ready-to-use `fetch()` snippet in `script.js` — just add your form ID.
+Before enabling registration:
 
-## 🚀 Putting it online (free options)
-- **Netlify Drop** — drag the whole folder onto app.netlify.com/drop → instant live link.
-- **GitHub Pages** — upload the folder to a repo and enable Pages.
-- **Cloudflare Pages / Vercel** — similar drag-and-drop deploys.
+1. Create or identify the correct event in the organizer’s Eventbrite account, matching the confirmed date, address and schedule. Set ticket capacity and order limits with the organizer.
+2. Capture name and email in the Eventbrite order form. Use ticket quantity as attendee count, with one ticket per person attending.
+3. Add an optional text question for wishes, notes and dietary needs. Verify whether it is collected per order or per attendee.
+4. Configure organizer order notifications to the organizer’s selected email and verify delivery. No organizer email has been provided yet.
+5. Decide how declines will be recorded. Do not create a ticket order for a person who is not attending. Eventbrite registration alone has not been verified to capture accept/decline responses. A separate organizer-approved reply form/service may be required.
+6. Test a registration with consent: verify saved name, email, quantity, notes, attendee confirmation and organizer receipt. Test cancellation/decline using the agreed reply method.
+7. Activate the link only when the appropriate flow works. Never expose account tokens in HTML, JavaScript or GitHub.
 
----
-Made with ❤️ and devotion to dance. Ask anytime to refine or add features!
+This release does NOT claim live Eventbrite registration, saved responses, organizer email delivery or decline capture. Those require the event link and organizer-side setup.
+
+References:
+- https://www.eventbrite.com/help/en-us/articles/347218/how-to-sell-eventbrite-tickets-on-your-website-through-an-embedded-checkout/
+- https://www.eventbrite.com/help/en-us/articles/228823/how-to-create-custom-questions-for-attendees/
+
+## Publishing
+
+Push changes to `main`; the current Netlify connection deploys them to https://shivanshi.ca/.
+Update asset query versions after changes and verify both languages after a reload.
+Use the previous GitHub commit if a rollback is needed; do not force-push shared history.
