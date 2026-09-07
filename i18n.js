@@ -67,13 +67,14 @@ const I18N = {
   /* ---- GURU ---- */
   guru_eyebrow: { en: "&#10086; Guru Vandana", bn: "&#10086; গুরু বন্দনা" },
   guru_h2:      { en: "The Guru", bn: "গুরু" },
-  guru_name:    { en: "Smt. Sanjukta Banerjee", bn: "শ্রীমতী সঞ্জুক্তা ব্যানার্জী" },
-  guru_role:    { en: "Guru &amp; Artistic Director", bn: "গুরু ও শিল্প নির্দেশক" },
-  guru_p1: { en: "Under the loving and rigorous guidance of her Guru, <strong>Sanjukta Banerjee</strong>, Sia has grown from a young learner into a confident performer ready to take the stage.", bn: "তার গুরু <strong>সঞ্জুক্তা ব্যানার্জী</strong>-র স্নেহময় ও কঠোর নির্দেশনায় সিয়া একজন তরুণ শিক্ষার্থী থেকে মঞ্চের জন্য প্রস্তুত এক আত্মবিশ্বাসী শিল্পীতে পরিণত হয়েছে।" },
-  guru_p2: { en: "A Guru in the Indian tradition is far more than a teacher &mdash; she is a mentor, guide, and guardian of an art passed down through generations. Every gesture, every expression, every beat that Sia offers on stage carries her Guru&rsquo;s dedication within it.", bn: "ভারতীয় ঐতিহ্যে গুরু কেবল একজন শিক্ষকের চেয়ে অনেক বেশি &mdash; তিনি একজন পথপ্রদর্শক, উপদেষ্টা এবং প্রজন্ম থেকে প্রজন্মে বাহিত এক শিল্পের রক্ষক। সিয়া মঞ্চে যে প্রতিটি ভঙ্গি, প্রতিটি অভিব্যক্তি, প্রতিটি ছন্দ নিবেদন করে, তার মধ্যেই তার গুরুর নিষ্ঠা নিহিত।" },
-  guru_note: { en: "&#9998; <em>Add a short biography of Guruji Sanjukta Banerjee here &mdash; her lineage, school/academy name, achievements, and a note of gratitude from Sia.</em>", bn: "&#9998; <em>এখানে গুরুজি সঞ্জুক্তা ব্যানার্জীর সংক্ষিপ্ত পরিচিতি যোগ করুন &mdash; তাঁর ঘরানা, নৃত্যালয়ের নাম, অর্জন এবং সিয়ার কৃতজ্ঞতার বার্তা।</em>" },
+  guru_name:    { en: "Dr. Sanjukta Banerjee", bn: "ড. সঞ্জুক্তা ব্যানার্জী" },
+  guru_role: {"en":"Guru · Founder &amp; Artistic Director, Saugandhikam Dance Academy","bn":"গুরু · প্রতিষ্ঠাতা ও শিল্প নির্দেশক, সৌগন্ধিকম ডান্স অ্যাকাডেমি"},
+  guru_p1: {"en":"<strong>Dr. Sanjukta Banerjee</strong> is an Indo-Canadian classical dancer, choreographer and educator whose practice spans <strong>Bharatanatyam, Mohiniyattam and Kathakali</strong>. She holds a PhD in Dance from York University and trained at Kolkata Kalamandalam under Kalamandalam P. Govindan Kutty and Dr. Thankamani Kutty.","bn":"<strong>ড. সঞ্জুক্তা ব্যানার্জী</strong> একজন ভারতীয়-কানাডীয় শাস্ত্রীয় নৃত্যশিল্পী, নৃত্যপরিচালক ও শিক্ষিকা। তাঁর শিল্পচর্চার প্রধান ক্ষেত্র <strong>ভরতনাট্যম, মোহিনীয়াট্টম ও কথাকলি</strong>। তিনি ইয়র্ক বিশ্ববিদ্যালয় থেকে নৃত্যে পিএইচডি অর্জন করেছেন এবং কলকাতা কলামণ্ডলমে কলামণ্ডলম পি. গোবিন্দন কুট্টি ও ড. থাঙ্কমণি কুট্টির কাছে তালিম নিয়েছেন।"},
+  guru_p2: {"en":"Many know her as <strong>Goddess Durga in Doordarshan&rsquo;s Mahalaya presentation of Mahishasura Mardini</strong>. Alongside her television work, she has brought Indian classical dance to international audiences through performances, workshops and lecture-demonstrations.","bn":"অনেকের কাছে তিনি <strong>দূরদর্শনের মহালয়ার মহিষাসুরমর্দিনী অনুষ্ঠানের দেবী দুর্গা</strong> হিসেবে পরিচিত। টেলিভিশনের পাশাপাশি মঞ্চানুষ্ঠান, কর্মশালা ও বক্তৃতা-প্রদর্শনীর মাধ্যমে তিনি আন্তর্জাতিক দর্শকদের কাছে ভারতীয় শাস্ত্রীয় নৃত্যকে পৌঁছে দিয়েছেন।"},
+  guru_p3: {"en":"As founder and artistic director of <strong>Saugandhikam Dance Academy</strong>, she nurtures dancers across the Greater Toronto Area. Sia&rsquo;s Arangetram is a celebration of this guru–shishya bond, with heartfelt gratitude for her Guru&rsquo;s guidance, care and dedication.","bn":"<strong>সৌগন্ধিকম ডান্স অ্যাকাডেমির</strong> প্রতিষ্ঠাতা ও শিল্প নির্দেশক হিসেবে তিনি গ্রেটার টরন্টো অঞ্চলে নৃত্যশিক্ষার্থীদের গড়ে তুলছেন। সিয়ার অরঙ্গেত্রম এই গুরু-শিষ্য সম্পর্কেরই উদ্‌যাপন—গুরুর দিশা, স্নেহ ও নিষ্ঠার প্রতি আন্তরিক কৃতজ্ঞতার নিবেদন।"},
+  guru_sources: {"en":"<a href=\"https://www.sanjuktabanerjee.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit Dr. Banerjee&rsquo;s website</a> · <a href=\"https://manoa.hawaii.edu/outreach/asiapacificdance/swaha-in-mohiniyattam/\" target=\"_blank\" rel=\"noopener noreferrer\">Artist profile</a>","bn":"<a href=\"https://www.sanjuktabanerjee.org/\" target=\"_blank\" rel=\"noopener noreferrer\">ড. ব্যানার্জীর ওয়েবসাইট</a> · <a href=\"https://manoa.hawaii.edu/outreach/asiapacificdance/swaha-in-mohiniyattam/\" target=\"_blank\" rel=\"noopener noreferrer\">শিল্পীর পরিচিতি</a>"},
   guru_photo_ph: { en: "Photo of Guru<br /><small>Replace: images/guru-sanjukta.jpg</small>", bn: "গুরুর ছবি<br /><small>প্রতিস্থাপন করুন: images/guru-sanjukta.jpg</small>" },
-  guru_caption: { en: "Smt. Sanjukta Banerjee", bn: "শ্রীমতী সঞ্জুক্তা ব্যানার্জী" },
+  guru_caption: { en: "Dr. Sanjukta Banerjee", bn: "ড. সঞ্জুক্তা ব্যানার্জী" },
 
   /* ---- EVENT ---- */
   event_eyebrow: { en: "&#10022; You&rsquo;re Invited", bn: "&#10022; আপনি আমন্ত্রিত" },
@@ -137,7 +138,7 @@ const I18N = {
   /* ---- FOOTER ---- */
   footer_title:   { en: "Shivanshi &ldquo;Sia&rdquo; Thakur &mdash; Arangetram", bn: "শিবাংশী &ldquo;সিয়া&rdquo; ঠাকুর &mdash; অরঙ্গেত্রম" },
   footer_sub:     { en: "April 24, 2027 &middot; Fairview Library, Toronto &middot; 4:00 PM", bn: "২৪ এপ্রিল, ২০২৭ &middot; ফেয়ারভিউ লাইব্রেরি, টরন্টো &middot; বিকাল ৪:০০" },
-  footer_thanks:  { en: "With heartfelt gratitude to Guru Smt. Sanjukta Banerjee, our family, friends &amp; musicians.", bn: "গুরু শ্রীমতী সঞ্জুক্তা ব্যানার্জী, আমাদের পরিবার, বন্ধু ও বাদকদলের প্রতি আন্তরিক কৃতজ্ঞতাসহ।" },
+  footer_thanks:  { en: "With heartfelt gratitude to Guru Dr. Sanjukta Banerjee, our family, friends &amp; musicians.", bn: "গুরু ড. সঞ্জুক্তা ব্যানার্জী, আমাদের পরিবার, বন্ধু ও বাদকদলের প্রতি আন্তরিক কৃতজ্ঞতাসহ।" },
   footer_fine:    { en: "&#169; 2027 Sia&rsquo;s Arangetram &middot; Made with &#10084;&#65039; &amp; devotion to dance", bn: "&#169; ২০২৭ সিয়ার অরঙ্গেত্রম &middot; &#10084;&#65039; ও নৃত্যের প্রতি ভক্তি দিয়ে তৈরি" },
 
   /* ---- COUNTDOWN (used by script.js) ---- */
