@@ -387,3 +387,7 @@ code { background: rgba(107,26,26,0.08); padding: 1px 6px; border-radius: 4px; f
   .rsvp-form, .margam { padding: 1.5rem; }
 }
 
+
+/* Guru portrait: preserve the complete photograph at every screen width. */
+.guru-portrait { display: block; width: 100%; height: auto; border-radius: var(--radius); box-shadow: var(--shadow); }
+.guru-sources a { color: var(--maroon); text-underline-offset: 3px; }
