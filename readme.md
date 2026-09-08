@@ -22,10 +22,10 @@ Use visitor-facing “Coming soon” cards for future media. Do not show develop
 
 ## Images
 
-- `images/hero-dancer.jpeg`: approved hero, unchanged.
+- `images/hero-sia.webp`: current hero, converted from the approved PNG with the full frame preserved.
 - `images/sia-portrait.jpeg`: supplied Sia_1.jpeg, unchanged.
 - `images/sia-dance-2.jpeg` through `sia-dance-4.jpeg`: supplied portraits, unchanged.
-- `images/guru-sanjukta.jpg`: Dr. Sanjukta Banerjee’s photo from https://www.sanjuktabanerjee.org/.
+- `images/guru-sanjukta-20260908.webp`: the supplied Guru photograph, with its full frame preserved.
 - Photos use natural proportions so faces, hands and feet are not cropped.
 - New rehearsal/event photos and the recording are pending; no invented media.
 
@@ -53,7 +53,7 @@ References:
 
 ## Publishing
 
-Push changes to `main`; the current Netlify connection deploys them to https://shivanshi.ca/.
+Push changes to `main`; GitHub Pages publishes them to https://shivanshi.ca/.
 Update asset query versions after changes and verify both languages after a reload.
 Use the previous GitHub commit if a rollback is needed; do not force-push shared history.
 
@@ -74,3 +74,11 @@ Before enabling SITE_CONFIG.blessingsFormUrl, the organizer must choose and conf
 analytics.js supports Cloudflare Web Analytics without cookies and respects Do Not Track and Global Privacy Control before loading the beacon. It is OFF by default; no analytics requests are sent with a blank site token. An organizer-owned Cloudflare Web Analytics site must be set up for shivanshi.ca. Supply its public beacon token in SITE_CONFIG.analyticsToken (never an API secret), then test an authorized visit and confirm it appears in the dashboard. The feature is not operational until that token and dashboard check are complete.
 
 Setup reference: https://developers.cloudflare.com/web-analytics/get-started/
+
+## September 8 site improvements
+
+Each numbered task was committed independently. Canonical URL, Open Graph metadata, event JSON-LD, .ics/Google calendar links, image navigation, mobile focus, lazy Bengali fonts/translations, skip link, off-screen rendering and before/after gallery tabs are implemented. Gold highlights use different shades for dark and light surfaces to preserve contrast.
+
+Pending: organizer-approved blessings submission/moderation service; Cloudflare Web Analytics public site token and dashboard verification. Social URL placeholders are intentionally empty until real profile links are supplied.
+
+Checks: JavaScript syntax; English/Bengali key coverage; unique HTML IDs and anchor targets; event timestamps and calendar CRLF; image dimensions; numeric colour contrast; disabled/Do Not Track/Global Privacy Control analytics behavior. No physical-phone or browser UI test was performed.

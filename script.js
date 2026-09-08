@@ -34,7 +34,7 @@ async function requestLanguage(lang) {
     toggle.setAttribute('aria-busy', 'true');
     status.textContent = 'Loading Bengali…';
     try {
-      const response = await fetch('i18n-bn.json?v=20260908');
+      const response = await fetch('i18n-bn.json?v=site-refresh-20260908');
       if (!response.ok) throw new Error('Language unavailable');
       const entries = await response.json();
       Object.entries(entries).forEach(([key, value]) => {
@@ -116,7 +116,8 @@ document.addEventListener('click', event => {
 });
 mobileNav.addEventListener('change', () => {
   const focusedInPanel = navLinks.contains(document.activeElement);
-  closeMenu(mobileNav.matches && focusedInPanel);
+  closeMenu(false);
+  if (mobileNav.matches && focusedInPanel) navToggle.focus();
   if (!mobileNav.matches && document.activeElement === navToggle) navLinks.querySelector('a[href]')?.focus();
 });
 window.addEventListener('scroll', () => {
