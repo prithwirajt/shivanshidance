@@ -121,3 +121,21 @@ photoLightbox.addEventListener('close', () => {
   lightboxImage.removeAttribute('src');
   photoTrigger?.focus();
 });
+
+/* Placeholder links are activated only for supplied, valid social URLs. */
+document.querySelectorAll('[data-social]').forEach(link => {
+  const kind = link.dataset.social;
+  const value = SITE_CONFIG.social?.[kind];
+  if (!value) return;
+  try {
+    const url = new URL(value);
+    const domains = { youtube: ['youtube.com', 'youtu.be'], facebook: ['facebook.com'], instagram: ['instagram.com'] };
+    if (url.protocol !== 'https:' || url.username || url.password ||
+        !domains[kind].some(host => url.hostname === host || url.hostname.endsWith('.' + host))) return;
+    link.href = url.href;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.removeAttribute('aria-disabled');
+    link.querySelector('span').remove();
+  } catch (_) {}
+});

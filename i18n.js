@@ -479,3 +479,9 @@ Object.assign(I18N, {
     "bn": "সিয়ার অরঙ্গেত্রম আপনার ফোনে রাখুন"
   }
 });
+
+Object.assign(I18N, {
+ social_title: { en: "Follow Sia’s journey", bn: "সিয়ার নৃত্যযাত্রার সঙ্গে থাকুন" },
+ social_pending: { en: "Our social links will be shared here soon.", bn: "আমাদের সোশ্যাল মিডিয়ার লিঙ্ক শীঘ্রই এখানে দেওয়া হবে।" },
+ social_soon: { en: "— Coming soon", bn: "— শীঘ্রই আসছে" }
+});

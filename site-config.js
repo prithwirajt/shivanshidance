@@ -1,3 +1,4 @@
 const SITE_CONFIG = Object.freeze({
-  eventbriteUrl: ''
+  eventbriteUrl: '',
+  social: { youtube: '', facebook: '', instagram: '' }
 });

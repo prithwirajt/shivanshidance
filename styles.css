@@ -394,3 +394,8 @@ body.lightbox-open { overflow: hidden; }
 @media (min-width: 901px) {
   .hero-content { background: rgba(30, 8, 8, .84); }
 }
+
+.social-section { text-align: center; }
+.social-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem; }
+.social-links a { padding: .75rem 1rem; border: 1px solid var(--maroon); border-radius: 12px; color: var(--maroon); }
+.social-links [aria-disabled="true"] { border-style: dashed; color: var(--ink-soft); cursor: default; }
