@@ -239,3 +239,30 @@ document.querySelectorAll('[data-social]').forEach(link => {
     link.querySelector('span').remove();
   } catch (_) {}
 });
+
+/* Gallery panels remain readable without JavaScript. */
+const galleryTabs = [...document.querySelectorAll('.gallery-tabs [role="tab"]')];
+function selectGalleryTab(tab, moveFocus = false) {
+  galleryTabs.forEach(item => {
+    const selected = item === tab;
+    item.setAttribute('aria-selected', String(selected));
+    item.tabIndex = selected ? 0 : -1;
+    document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+  });
+  if (moveFocus) tab.focus();
+}
+galleryTabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => selectGalleryTab(tab));
+  tab.addEventListener('keydown', event => {
+    let next;
+    if (event.key === 'ArrowRight') next = (index + 1) % galleryTabs.length;
+    if (event.key === 'ArrowLeft') next = (index + galleryTabs.length - 1) % galleryTabs.length;
+    if (event.key === 'Home') next = 0;
+    if (event.key === 'End') next = galleryTabs.length - 1;
+    if (next !== undefined) { event.preventDefault(); selectGalleryTab(galleryTabs[next], true); }
+  });
+});
+if (galleryTabs.length) {
+  document.querySelector('.gallery-tabs').hidden = false;
+  selectGalleryTab(galleryTabs[0]);
+}

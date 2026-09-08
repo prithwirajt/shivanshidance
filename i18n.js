@@ -404,3 +404,15 @@ Object.assign(I18N, {
     "en": "The blessings could not load. Please try again later."
   }
 });
+
+Object.assign(I18N, {
+  "gallery_before": {
+    "en": "Before the event"
+  },
+  "gallery_after": {
+    "en": "After the event"
+  },
+  "gallery_after_note": {
+    "en": "Event photos and recordings will be shared here after April 24, 2027."
+  }
+});
