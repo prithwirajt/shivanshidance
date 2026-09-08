@@ -2,7 +2,8 @@
 const EVENT_DATE = new Date('2027-04-24T16:30:00-04:00');
 const PERFORMANCE_END = new Date('2027-04-24T19:30:00-04:00');
 let currentLang = 'en';
-try { currentLang = localStorage.getItem('sia_lang') === 'bn' ? 'bn' : 'en'; } catch (_) {}
+let preferredLang = 'en';
+try { preferredLang = localStorage.getItem('sia_lang') === 'bn' ? 'bn' : 'en'; } catch (_) {}
 
 function t(key) {
   const entry = I18N[key];
@@ -23,9 +24,40 @@ function applyLanguage(lang) {
   renderCountdown();
 }
 
-document.getElementById('langToggle')?.addEventListener('click', () => {
-  applyLanguage(currentLang === 'en' ? 'bn' : 'en');
+let bengaliReady = false;
+async function requestLanguage(lang) {
+  const toggle = document.getElementById('langToggle');
+  const status = document.getElementById('languageStatus');
   closeMenu();
+  if (lang === 'bn' && !bengaliReady) {
+    toggle.disabled = true;
+    toggle.setAttribute('aria-busy', 'true');
+    status.textContent = 'Loading Bengali…';
+    try {
+      const response = await fetch('i18n-bn.json?v=20260908');
+      if (!response.ok) throw new Error('Language unavailable');
+      const entries = await response.json();
+      Object.entries(entries).forEach(([key, value]) => {
+        if (I18N[key] && typeof value === 'string') I18N[key].bn = value;
+      });
+      const fonts = document.createElement('link');
+      fonts.rel = 'stylesheet';
+      fonts.href = 'https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600&display=swap';
+      document.head.appendChild(fonts);
+      bengaliReady = true;
+    } catch (_) {
+      status.textContent = 'Bengali could not load. Check your connection and try again.';
+      return;
+    } finally {
+      toggle.disabled = false;
+      toggle.removeAttribute('aria-busy');
+    }
+  }
+  applyLanguage(lang);
+  status.textContent = lang === 'bn' ? 'বাংলা ভাষা চালু হয়েছে।' : 'English selected.';
+}
+document.getElementById('langToggle')?.addEventListener('click', () => {
+  requestLanguage(currentLang === 'en' ? 'bn' : 'en');
 });
 
 function renderCountdown() {
@@ -123,6 +155,7 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   });
 }
 applyLanguage(currentLang);
+if (preferredLang === 'bn') requestLanguage('bn');
 setInterval(renderCountdown, 1000);
 
 /* Lightbox: buttons, arrow keys and one-finger horizontal swipes. */

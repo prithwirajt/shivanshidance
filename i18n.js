@@ -1,494 +1,380 @@
 const I18N = {
   "brand": {
-    "en": "Sia&rsquo;s Arangetram",
-    "bn": "সিয়ার অরঙ্গেত্রম"
+    "en": "Sia&rsquo;s Arangetram"
   },
   "nav_home": {
-    "en": "Home",
-    "bn": "হোম"
+    "en": "Home"
   },
   "nav_about": {
-    "en": "About Sia",
-    "bn": "সিয়া সম্পর্কে"
+    "en": "About Sia"
   },
   "nav_arangetram": {
-    "en": "The Arangetram",
-    "bn": "অরঙ্গেত্রম"
+    "en": "The Arangetram"
   },
   "nav_guru": {
-    "en": "The Guru",
-    "bn": "গুরু"
+    "en": "The Guru"
   },
   "nav_event": {
-    "en": "Event Details",
-    "bn": "অনুষ্ঠানের বিবরণ"
+    "en": "Event Details"
   },
   "nav_gallery": {
-    "en": "Gallery",
-    "bn": "গ্যালারি"
+    "en": "Gallery"
   },
   "nav_rsvp": {
-    "en": "RSVP",
-    "bn": "উপস্থিতি জানান"
+    "en": "RSVP"
   },
   "hero_kicker": {
-    "en": "&#10022; With the blessings of the divine &#10022;",
-    "bn": "&#10022; ঈশ্বরের আশীর্বাদে &#10022;"
+    "en": "&#10022; With the blessings of the divine &#10022;"
   },
   "hero_title": {
-    "en": "Shivanshi <span>&ldquo;Sia&rdquo;</span> Thakur",
-    "bn": "শিবাংশী <span>&ldquo;সিয়া&rdquo;</span> ঠাকুর"
+    "en": "Shivanshi <span>&ldquo;Sia&rdquo;</span> Thakur"
   },
   "hero_sub": {
-    "en": "presents her <strong>Arangetram</strong>",
-    "bn": "উপস্থাপন করছে তার <strong>অরঙ্গেত্রম</strong>"
+    "en": "presents her <strong>Arangetram</strong>"
   },
   "hero_tag": {
-    "en": "A solo Bharatanatyam debut &mdash; a journey of devotion, discipline &amp; joy",
-    "bn": "একক ভরতনাট্যম অভিষেক &mdash; ভক্তি, অনুশীলন ও আনন্দের এক যাত্রা"
+    "en": "A solo Bharatanatyam debut &mdash; a journey of devotion, discipline &amp; joy"
   },
   "label_date": {
-    "en": "Date",
-    "bn": "তারিখ"
+    "en": "Date"
   },
   "val_date": {
-    "en": "April 24, 2027",
-    "bn": "২৪ এপ্রিল, ২০২৭"
+    "en": "April 24, 2027"
   },
   "label_time": {
-    "en": "Performance",
-    "bn": "নৃত্যানুষ্ঠান"
+    "en": "Performance"
   },
   "val_time": {
-    "en": "4:30 PM",
-    "bn": "বিকেল ৪:৩০"
+    "en": "4:30 PM"
   },
   "label_venue": {
-    "en": "Venue",
-    "bn": "স্থান"
+    "en": "Venue"
   },
   "val_venue": {
-    "en": "Fairview Library Theatre, Toronto",
-    "bn": "ফেয়ারভিউ লাইব্রেরি থিয়েটার, টরন্টো"
+    "en": "Fairview Library Theatre, Toronto"
   },
   "btn_rsvp_now": {
-    "en": "RSVP Details",
-    "bn": "উপস্থিতির তথ্য"
+    "en": "RSVP Details"
   },
   "btn_event_details": {
-    "en": "Event Details",
-    "bn": "অনুষ্ঠানের বিবরণ"
+    "en": "Event Details"
   },
   "about_eyebrow": {
-    "en": "&#10086; Meet the Artist",
-    "bn": "&#10086; শিল্পীর পরিচয়"
+    "en": "&#10086; Meet the Artist"
   },
   "about_h2": {
-    "en": "About Sia",
-    "bn": "সিয়া সম্পর্কে"
+    "en": "About Sia"
   },
   "about_caption": {
-    "en": "Shivanshi &ldquo;Sia&rdquo; Thakur",
-    "bn": "শিবাংশী &ldquo;সিয়া&rdquo; ঠাকুর"
+    "en": "Shivanshi &ldquo;Sia&rdquo; Thakur"
   },
   "about_p1": {
-    "en": "Shivanshi &mdash; lovingly known as <strong>Sia</strong> &mdash; is a devoted student of the classical Indian dance form <strong>Bharatanatyam</strong>.",
-    "bn": "শিবাংশী &mdash; ভালোবেসে যাকে <strong>সিয়া</strong> বলা হয় &mdash; ভারতীয় শাস্ত্রীয় নৃত্যকলা <strong>ভরতনাট্যম</strong>-এর একজন নিষ্ঠাবান শিক্ষার্থী।"
+    "en": "Shivanshi &mdash; lovingly known as <strong>Sia</strong> &mdash; is a devoted student of the classical Indian dance form <strong>Bharatanatyam</strong>."
   },
   "about_p2": {
-    "en": "For years, Sia has dedicated herself to the grammar of this ancient art: the precise footwork (<em>adavus</em>), the eloquent hand gestures (<em>mudras</em>), the storytelling of the eyes and face (<em>abhinaya</em>), and the rhythmic soul of the music. What began as a childhood curiosity has blossomed into a lifelong passion.",
-    "bn": "বছরের পর বছর সিয়া এই প্রাচীন শিল্পের ব্যাকরণে নিজেকে নিয়োজিত করেছে: নিখুঁত পদক্ষেপ (<em>অড়বু</em>), সুস্পষ্ট হস্তমুদ্রা (<em>মুদ্রা</em>), চোখ ও মুখের গল্প বলা (<em>অভিনয়</em>), এবং সঙ্গীতের ছন্দময় প্রাণ। যা শৈশবের কৌতূহল হিসেবে শুরু হয়েছিল, তা আজ আজীবনের ভালোবাসায় পরিণত হয়েছে।"
+    "en": "For years, Sia has dedicated herself to the grammar of this ancient art: the precise footwork (<em>adavus</em>), the eloquent hand gestures (<em>mudras</em>), the storytelling of the eyes and face (<em>abhinaya</em>), and the rhythmic soul of the music. What began as a childhood curiosity has blossomed into a lifelong passion."
   },
   "about_p3": {
-    "en": "Her <strong>Arangetram</strong> marks the culmination of this rigorous training &mdash; the moment a student steps onto the stage, alone, to offer everything she has learned. It is at once a graduation, a prayer, and a celebration.",
-    "bn": "তার <strong>অরঙ্গেত্রম</strong> এই কঠোর প্রশিক্ষণের চূড়ান্ত মুহূর্ত &mdash; যে মুহূর্তে একজন শিক্ষার্থী একা মঞ্চে উঠে তার সমস্ত শিক্ষা নিবেদন করে। এটি একইসাথে একটি সমাপ্তি, একটি প্রার্থনা এবং একটি উৎসব।"
+    "en": "Her <strong>Arangetram</strong> marks the culmination of this rigorous training &mdash; the moment a student steps onto the stage, alone, to offer everything she has learned. It is at once a graduation, a prayer, and a celebration."
   },
   "about_quote": {
-    "en": "&ldquo;To dance is to pray with the whole body.&rdquo;",
-    "bn": "&ldquo;নৃত্য হলো সমগ্র দেহ দিয়ে প্রার্থনা করা।&rdquo;"
+    "en": "&ldquo;To dance is to pray with the whole body.&rdquo;"
   },
   "ar_eyebrow": {
-    "en": "&#10022; The Meaning",
-    "bn": "&#10022; তাৎপর্য"
+    "en": "&#10022; The Meaning"
   },
   "ar_h2": {
-    "en": "What is an Arangetram?",
-    "bn": "অরঙ্গেত্রম কী?"
+    "en": "What is an Arangetram?"
   },
   "ar_c1_h": {
-    "en": "Ascending the Stage",
-    "bn": "মঞ্চে আরোহণ"
+    "en": "Ascending the Stage"
   },
   "ar_c1_p": {
-    "en": "The word <em>Arangetram</em> comes from Tamil &mdash; <em>arangu</em> (stage) and <em>etram</em> (ascending). It is a dancer&rsquo;s first full solo performance before an audience.",
-    "bn": "<em>অরঙ্গেত্রম</em> শব্দটি তামিল থেকে এসেছে &mdash; <em>অরঙ্গু</em> (মঞ্চ) ও <em>এত্রম</em> (আরোহণ)। এটি একজন নৃত্যশিল্পীর দর্শকের সামনে প্রথম পূর্ণাঙ্গ একক পরিবেশনা।"
+    "en": "The word <em>Arangetram</em> comes from Tamil &mdash; <em>arangu</em> (stage) and <em>etram</em> (ascending). It is a dancer&rsquo;s first full solo performance before an audience."
   },
   "ar_c2_h": {
-    "en": "Years of Devotion",
-    "bn": "বছরের ভক্তি"
+    "en": "Years of Devotion"
   },
   "ar_c2_p": {
-    "en": "It represents many years of disciplined training under a Guru &mdash; a rite of passage where the student demonstrates mastery of technique, rhythm and expression.",
-    "bn": "এটি একজন গুরুর অধীনে বহু বছরের সুশৃঙ্খল প্রশিক্ষণের প্রতিনিধিত্ব করে &mdash; একটি রীতি যেখানে শিক্ষার্থী কৌশল, ছন্দ ও অভিব্যক্তিতে দক্ষতা প্রদর্শন করে।"
+    "en": "It represents many years of disciplined training under a Guru &mdash; a rite of passage where the student demonstrates mastery of technique, rhythm and expression."
   },
   "ar_c3_h": {
-    "en": "A Solo Journey",
-    "bn": "একক যাত্রা"
+    "en": "A Solo Journey"
   },
   "ar_c3_p": {
-    "en": "Across a full-length recital, the dancer performs alone, moving through a traditional repertoire that builds from pure rhythm to deep emotional storytelling.",
-    "bn": "একটি পূর্ণাঙ্গ পরিবেশনায় নৃত্যশিল্পী একা পরিবেশন করে, শুদ্ধ ছন্দ থেকে গভীর আবেগময় গল্প বলা পর্যন্ত একটি ঐতিহ্যবাহী ধারায় এগিয়ে যায়।"
+    "en": "Across a full-length recital, the dancer performs alone, moving through a traditional repertoire that builds from pure rhythm to deep emotional storytelling."
   },
   "margam_title": {
-    "en": "The Margam &mdash; The Traditional Repertoire",
-    "bn": "মার্গম &mdash; ঐতিহ্যবাহী পরিবেশনাক্রম"
+    "en": "The Margam &mdash; The Traditional Repertoire"
   },
   "margam_intro": {
-    "en": "A Bharatanatyam recital follows a <em>Margam</em> (&ldquo;the path&rdquo;). The pieces below introduce the traditional repertoire; Sia&rsquo;s final programme is <strong>To Be Announced</strong>.",
-    "bn": "ভরতনাট্যমের পূর্ণাঙ্গ অনুষ্ঠানের ধারাকে বলা হয় <em>মার্গম</em> (&ldquo;পথ&rdquo;)। নিচে ঐতিহ্যবাহী নৃত্যাংশগুলির পরিচয় দেওয়া হয়েছে; সিয়ার চূড়ান্ত সূচি <strong>পরে জানানো হবে</strong>।"
+    "en": "A Bharatanatyam recital follows a <em>Margam</em> (&ldquo;the path&rdquo;). The pieces below introduce the traditional repertoire; Sia&rsquo;s final programme is <strong>To Be Announced</strong>."
   },
   "margam_1": {
-    "en": "<strong>Pushpanjali &amp; Alarippu</strong> — An opening flower offering and a rhythmic dance that introduces movement.",
-    "bn": "<strong>পুষ্পাঞ্জলি ও আলারিপ্পু</strong> — পুষ্প নিবেদন ও ছন্দময় নৃত্যের মাধ্যমে অনুষ্ঠানের সূচনা।"
+    "en": "<strong>Pushpanjali &amp; Alarippu</strong> — An opening flower offering and a rhythmic dance that introduces movement."
   },
   "margam_2": {
-    "en": "<strong>Jatiswaram</strong> &mdash; Pure dance woven from rhythm and melody.",
-    "bn": "<strong>জতিস্বরম</strong> &mdash; ছন্দ ও সুরে গাঁথা শুদ্ধ নৃত্য।"
+    "en": "<strong>Jatiswaram</strong> &mdash; Pure dance woven from rhythm and melody."
   },
   "margam_3": {
-    "en": "<strong>Shabdam</strong> &mdash; Where expression and storytelling begin.",
-    "bn": "<strong>শব্দম</strong> &mdash; যেখানে অভিব্যক্তি ও গল্প বলা শুরু হয়।"
+    "en": "<strong>Shabdam</strong> &mdash; Where expression and storytelling begin."
   },
   "margam_4": {
-    "en": "<strong>Varnam</strong> &mdash; The centrepiece; a demanding blend of rhythm and deep emotion.",
-    "bn": "<strong>বর্ণম</strong> &mdash; কেন্দ্রীয় পরিবেশনা; ছন্দ ও গভীর আবেগের এক দুরূহ সংমিশ্রণ।"
+    "en": "<strong>Varnam</strong> &mdash; The centrepiece; a demanding blend of rhythm and deep emotion."
   },
   "margam_5": {
-    "en": "<strong>Padam &amp; Javali</strong> &mdash; Lyrical pieces rich in <em>abhinaya</em> (expression).",
-    "bn": "<strong>পদম ও জাবলি</strong> &mdash; <em>অভিনয়</em>-সমৃদ্ধ গীতিময় পরিবেশনা।"
+    "en": "<strong>Padam &amp; Javali</strong> &mdash; Lyrical pieces rich in <em>abhinaya</em> (expression)."
   },
   "margam_6": {
-    "en": "<strong>Thillana</strong> &mdash; A joyous, sparkling finale of rhythm.",
-    "bn": "<strong>তিল্লানা</strong> &mdash; ছন্দের এক আনন্দময়, ঝলমলে সমাপ্তি।"
+    "en": "<strong>Thillana</strong> &mdash; A joyous, sparkling finale of rhythm."
   },
   "margam_7": {
-    "en": "<strong>Mangalam</strong> &mdash; A closing blessing of gratitude.",
-    "bn": "<strong>মঙ্গলম</strong> &mdash; কৃতজ্ঞতার সমাপনী আশীর্বাদ।"
+    "en": "<strong>Mangalam</strong> &mdash; A closing blessing of gratitude."
   },
   "guru_eyebrow": {
-    "en": "&#10086; Guru Vandana",
-    "bn": "&#10086; গুরু বন্দনা"
+    "en": "&#10086; Guru Vandana"
   },
   "guru_h2": {
-    "en": "The Guru",
-    "bn": "গুরু"
+    "en": "The Guru"
   },
   "guru_name": {
-    "en": "Dr. Sanjukta Banerjee",
-    "bn": "ড. সঞ্জুক্তা ব্যানার্জী"
+    "en": "Dr. Sanjukta Banerjee"
   },
   "guru_role": {
-    "en": "Guru · Founder &amp; Artistic Director, Saugandhikam Dance Academy",
-    "bn": "গুরু · প্রতিষ্ঠাতা ও শিল্প নির্দেশক, সৌগন্ধিকম ডান্স অ্যাকাডেমি"
+    "en": "Guru · Founder &amp; Artistic Director, Saugandhikam Dance Academy"
   },
   "guru_p1": {
-    "en": "<strong>Dr. Sanjukta Banerjee</strong> is an Indo-Canadian classical dancer, choreographer and educator whose practice spans <strong>Bharatanatyam, Mohiniyattam and Kathakali</strong>. She holds a PhD in Dance from York University and trained at Kolkata Kalamandalam under Kalamandalam P. Govindan Kutty and Dr. Thankamani Kutty.",
-    "bn": "<strong>ড. সঞ্জুক্তা ব্যানার্জী</strong> একজন ভারতীয়-কানাডীয় শাস্ত্রীয় নৃত্যশিল্পী, নৃত্যপরিচালক ও শিক্ষিকা। তাঁর শিল্পচর্চার প্রধান ক্ষেত্র <strong>ভরতনাট্যম, মোহিনীয়াট্টম ও কথাকলি</strong>। তিনি ইয়র্ক বিশ্ববিদ্যালয় থেকে নৃত্যে পিএইচডি অর্জন করেছেন এবং কলকাতা কলামণ্ডলমে কলামণ্ডলম পি. গোবিন্দন কুট্টি ও ড. থাঙ্কমণি কুট্টির কাছে তালিম নিয়েছেন।"
+    "en": "<strong>Dr. Sanjukta Banerjee</strong> is an Indo-Canadian classical dancer, choreographer and educator whose practice spans <strong>Bharatanatyam, Mohiniyattam and Kathakali</strong>. She holds a PhD in Dance from York University and trained at Kolkata Kalamandalam under Kalamandalam P. Govindan Kutty and Dr. Thankamani Kutty."
   },
   "guru_p2": {
-    "en": "Many know her as <strong>Goddess Durga in Doordarshan&rsquo;s Mahalaya presentation of Mahishasura Mardini</strong>. Alongside her television work, she has brought Indian classical dance to international audiences through performances, workshops and lecture-demonstrations.",
-    "bn": "অনেকের কাছে তিনি <strong>দূরদর্শনের মহালয়ার মহিষাসুরমর্দিনী অনুষ্ঠানের দেবী দুর্গা</strong> হিসেবে পরিচিত। টেলিভিশনের পাশাপাশি মঞ্চানুষ্ঠান, কর্মশালা ও বক্তৃতা-প্রদর্শনীর মাধ্যমে তিনি আন্তর্জাতিক দর্শকদের কাছে ভারতীয় শাস্ত্রীয় নৃত্যকে পৌঁছে দিয়েছেন।"
+    "en": "Many know her as <strong>Goddess Durga in Doordarshan&rsquo;s Mahalaya presentation of Mahishasura Mardini</strong>. Alongside her television work, she has brought Indian classical dance to international audiences through performances, workshops and lecture-demonstrations."
   },
   "guru_p3": {
-    "en": "As founder and artistic director of <strong>Saugandhikam Dance Academy</strong>, she nurtures dancers across the Greater Toronto Area. Sia&rsquo;s Arangetram is a celebration of this guru–shishya bond, with heartfelt gratitude for her Guru&rsquo;s guidance, care and dedication.",
-    "bn": "<strong>সৌগন্ধিকম ডান্স অ্যাকাডেমির</strong> প্রতিষ্ঠাতা ও শিল্প নির্দেশক হিসেবে তিনি গ্রেটার টরন্টো অঞ্চলে নৃত্যশিক্ষার্থীদের গড়ে তুলছেন। সিয়ার অরঙ্গেত্রম এই গুরু-শিষ্য সম্পর্কেরই উদ্‌যাপন—গুরুর দিশা, স্নেহ ও নিষ্ঠার প্রতি আন্তরিক কৃতজ্ঞতার নিবেদন।"
+    "en": "As founder and artistic director of <strong>Saugandhikam Dance Academy</strong>, she nurtures dancers across the Greater Toronto Area. Sia&rsquo;s Arangetram is a celebration of this guru–shishya bond, with heartfelt gratitude for her Guru&rsquo;s guidance, care and dedication."
   },
   "guru_sources": {
-    "en": "<a href=\"https://www.sanjuktabanerjee.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Official artist profile</a>",
-    "bn": "<a href=\"https://www.sanjuktabanerjee.org/\" target=\"_blank\" rel=\"noopener noreferrer\">শিল্পীর আনুষ্ঠানিক পরিচিতি</a>"
+    "en": "<a href=\"https://www.sanjuktabanerjee.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Official artist profile</a>"
   },
   "guru_caption": {
-    "en": "Dr. Sanjukta Banerjee",
-    "bn": "ড. সঞ্জুক্তা ব্যানার্জী"
+    "en": "Dr. Sanjukta Banerjee"
   },
   "event_eyebrow": {
-    "en": "&#10022; You&rsquo;re Invited",
-    "bn": "&#10022; আপনি আমন্ত্রিত"
+    "en": "&#10022; You&rsquo;re Invited"
   },
   "event_h2": {
-    "en": "Event Details",
-    "bn": "অনুষ্ঠানের বিবরণ"
+    "en": "Event Details"
   },
   "event_date_h": {
-    "en": "Date",
-    "bn": "তারিখ"
+    "en": "Date"
   },
   "event_date_p": {
-    "en": "Saturday<br /><strong>April 24, 2027</strong>",
-    "bn": "শনিবার<br /><strong>২৪ এপ্রিল, ২০২৭</strong>"
+    "en": "Saturday<br /><strong>April 24, 2027</strong>"
   },
   "event_time_h": {
-    "en": "Performance",
-    "bn": "নৃত্যানুষ্ঠান"
+    "en": "Performance"
   },
   "event_time_p": {
-    "en": "<strong>4:30–7:30 PM</strong><br />Includes a 30-minute intermission",
-    "bn": "<strong>বিকেল ৪:৩০–সন্ধ্যা ৭:৩০</strong><br />৩০ মিনিটের বিরতিসহ"
+    "en": "<strong>4:30–7:30 PM</strong><br />Includes a 30-minute intermission"
   },
   "event_venue_h": {
-    "en": "Venue",
-    "bn": "স্থান"
+    "en": "Venue"
   },
   "event_venue_p": {
-    "en": "<strong>Fairview Library Theatre</strong><br />35 Fairview Mall Drive<br />Toronto, ON M2J 4S4",
-    "bn": "<strong>ফেয়ারভিউ লাইব্রেরি থিয়েটার</strong><br />35 Fairview Mall Drive<br />Toronto, ON M2J 4S4"
+    "en": "<strong>Fairview Library Theatre</strong><br />35 Fairview Mall Drive<br />Toronto, ON M2J 4S4"
   },
   "event_music_h": {
-    "en": "Musicians",
-    "bn": "বাদ্যশিল্পী"
+    "en": "Musicians"
   },
   "event_music_p": {
-    "en": "<strong>To Be Announced</strong><br />Artist details will be shared here",
-    "bn": "<strong>পরে জানানো হবে</strong><br />শিল্পীদের পরিচয় এখানে প্রকাশিত হবে"
+    "en": "<strong>To Be Announced</strong><br />Artist details will be shared here"
   },
   "event_food_h": {
-    "en": "Vegetarian Dinner",
-    "bn": "নিরামিষ নৈশভোজ"
+    "en": "Vegetarian Dinner"
   },
   "event_food_p": {
-    "en": "<strong>8:00 PM onwards</strong><br />Please join us after the recital",
-    "bn": "<strong>রাত ৮টা থেকে</strong><br />নৃত্যানুষ্ঠানের পরে আমাদের সঙ্গে যোগ দিন"
+    "en": "<strong>8:00 PM onwards</strong><br />Please join us after the recital"
   },
   "event_guest_h": {
-    "en": "Special Guest",
-    "bn": "বিশেষ অতিথি"
+    "en": "Special Guest"
   },
   "event_guest_p": {
-    "en": "<strong>To Be Announced</strong>",
-    "bn": "<strong>পরে জানানো হবে</strong>"
+    "en": "<strong>To Be Announced</strong>"
   },
   "map_h": {
-    "en": "Find Us",
-    "bn": "আমাদের খুঁজে নিন"
+    "en": "Find Us"
   },
   "map_note": {
-    "en": "Parking and arrival guidance: <strong>To Be Announced</strong>.",
-    "bn": "পার্কিং ও আগমনের নির্দেশনা: <strong>পরে জানানো হবে</strong>।"
+    "en": "Parking and arrival guidance: <strong>To Be Announced</strong>."
   },
   "sched_h": {
-    "en": "The Evening",
-    "bn": "সন্ধ্যার সূচি"
+    "en": "The Evening"
   },
   "sched_1": {
-    "en": "Guest arrival, welcome &amp; refreshments",
-    "bn": "অতিথিদের আগমন, অভ্যর্থনা ও জলখাবার"
+    "en": "Guest arrival, welcome &amp; refreshments"
   },
   "sched_2": {
-    "en": "Arangetram performance, including the intermission",
-    "bn": "অরঙ্গেত্রম নৃত্যানুষ্ঠান, বিরতিসহ"
+    "en": "Arangetram performance, including the intermission"
   },
   "sched_3": {
-    "en": "30-minute intermission · Exact time to be announced",
-    "bn": "৩০ মিনিটের বিরতি · নির্দিষ্ট সময় পরে জানানো হবে"
+    "en": "30-minute intermission · Exact time to be announced"
   },
   "sched_4": {
-    "en": "Vegetarian dinner",
-    "bn": "নিরামিষ নৈশভোজ"
+    "en": "Vegetarian dinner"
   },
   "gallery_eyebrow": {
-    "en": "A Journey in Dance",
-    "bn": "নৃত্যের পথে"
+    "en": "A Journey in Dance"
   },
   "gallery_h2": {
-    "en": "Gallery &amp; Recordings",
-    "bn": "ছবি ও ভিডিও"
+    "en": "Gallery &amp; Recordings"
   },
   "gallery_video_h": {
-    "en": "Performance Recording",
-    "bn": "নৃত্যানুষ্ঠানের ভিডিও"
+    "en": "Performance Recording"
   },
   "gallery_video_p": {
-    "en": "Coming after the event · Recording details will be announced here.",
-    "bn": "অনুষ্ঠানের পরে আসছে · ভিডিওর তথ্য এখানে জানানো হবে।"
+    "en": "Coming after the event · Recording details will be announced here."
   },
   "gallery_photo_h": {
-    "en": "Sia in Dance",
-    "bn": "নৃত্যে সিয়া"
+    "en": "Sia in Dance"
   },
   "rsvp_eyebrow": {
-    "en": "Join the Celebration",
-    "bn": "উদ্‌যাপনে যোগ দিন"
+    "en": "Join the Celebration"
   },
   "rsvp_h2": {
-    "en": "RSVP",
-    "bn": "উপস্থিতি জানান"
+    "en": "RSVP"
   },
   "rsvp_intro": {
-    "en": "We look forward to celebrating with you and sharing a vegetarian dinner after the recital.",
-    "bn": "নৃত্যানুষ্ঠান ও পরবর্তী নিরামিষ নৈশভোজে আপনাদের সঙ্গে এই আনন্দ ভাগ করে নেওয়ার অপেক্ষায় রইলাম।"
+    "en": "We look forward to celebrating with you and sharing a vegetarian dinner after the recital."
   },
   "footer_title": {
-    "en": "Shivanshi &ldquo;Sia&rdquo; Thakur &mdash; Arangetram",
-    "bn": "শিবাংশী &ldquo;সিয়া&rdquo; ঠাকুর &mdash; অরঙ্গেত্রম"
+    "en": "Shivanshi &ldquo;Sia&rdquo; Thakur &mdash; Arangetram"
   },
   "footer_sub": {
-    "en": "April 24, 2027 · Fairview Library Theatre, Toronto<br />Welcome 4:00 PM · Performance 4:30 PM",
-    "bn": "২৪ এপ্রিল, ২০২৭ · ফেয়ারভিউ লাইব্রেরি থিয়েটার, টরন্টো<br />অভ্যর্থনা বিকেল ৪টা · নৃত্যানুষ্ঠান বিকেল ৪:৩০"
+    "en": "April 24, 2027 · Fairview Library Theatre, Toronto<br />Welcome 4:00 PM · Performance 4:30 PM"
   },
   "footer_thanks": {
-    "en": "With heartfelt gratitude to Guru Dr. Sanjukta Banerjee, our family &amp; friends.",
-    "bn": "গুরু ড. সঞ্জুক্তা ব্যানার্জী, আমাদের পরিবার ও বন্ধুদের প্রতি আন্তরিক কৃতজ্ঞতাসহ।"
+    "en": "With heartfelt gratitude to Guru Dr. Sanjukta Banerjee, our family &amp; friends."
   },
   "footer_fine": {
-    "en": "&#169; 2027 Sia&rsquo;s Arangetram · With love &amp; devotion to dance",
-    "bn": "&#169; ২০২৭ সিয়ার অরঙ্গেত্রম · ভালোবাসা ও নৃত্যের প্রতি নিষ্ঠায়"
+    "en": "&#169; 2027 Sia&rsquo;s Arangetram · With love &amp; devotion to dance"
   },
   "cd_days": {
-    "en": "Days",
-    "bn": "দিন"
+    "en": "Days"
   },
   "cd_hours": {
-    "en": "Hours",
-    "bn": "ঘণ্টা"
+    "en": "Hours"
   },
   "cd_mins": {
-    "en": "Mins",
-    "bn": "মিনিট"
+    "en": "Mins"
   },
   "cd_secs": {
-    "en": "Secs",
-    "bn": "সেকেন্ড"
+    "en": "Secs"
   },
   "cd_arrived": {
-    "en": "The recital has begun. Thank you for celebrating with us!",
-    "bn": "নৃত্যানুষ্ঠান শুরু হয়েছে। আমাদের সঙ্গে উদ্‌যাপনের জন্য ধন্যবাদ!"
+    "en": "The recital has begun. Thank you for celebrating with us!"
   },
   "hero_arrival": {
-    "en": "Arrival time 4PM Eastern",
-    "bn": "আগমনের সময় বিকেল ৪টা (ইস্টার্ন টাইম)"
+    "en": "Arrival time 4PM Eastern"
   },
   "venue_link": {
-    "en": "Venue information",
-    "bn": "প্রেক্ষাগৃহের তথ্য"
+    "en": "Venue information"
   },
   "sched_time_1": {
-    "en": "4:00–4:30 PM",
-    "bn": "বিকেল ৪:০০–৪:৩০"
+    "en": "4:00–4:30 PM"
   },
   "sched_time_2": {
-    "en": "4:30–7:30 PM",
-    "bn": "বিকেল ৪:৩০–সন্ধ্যা ৭:৩০"
+    "en": "4:30–7:30 PM"
   },
   "sched_time_3": {
-    "en": "During the recital",
-    "bn": "নৃত্যানুষ্ঠানের মাঝে"
+    "en": "During the recital"
   },
   "sched_time_4": {
-    "en": "8:00 PM onwards",
-    "bn": "রাত ৮টা থেকে"
+    "en": "8:00 PM onwards"
   },
   "schedule_timezone": {
-    "en": "All times are local to Toronto.",
-    "bn": "সব সময় টরন্টোর স্থানীয় সময় অনুযায়ী।"
+    "en": "All times are local to Toronto."
   },
   "gallery_portrait_note": {
-    "en": "A few moments from Sia&rsquo;s dance journey.",
-    "bn": "সিয়ার নৃত্যযাত্রার কিছু মুহূর্ত।"
+    "en": "A few moments from Sia&rsquo;s dance journey."
   },
   "gallery_rehearsal_h": {
-    "en": "Rehearsal Moments",
-    "bn": "মহড়ার মুহূর্ত"
+    "en": "Rehearsal Moments"
   },
   "gallery_rehearsal_p": {
-    "en": "Coming soon · Glimpses of the preparations will be shared here.",
-    "bn": "শীঘ্রই আসছে · প্রস্তুতির কিছু মুহূর্ত এখানে প্রকাশিত হবে।"
+    "en": "Coming soon · Glimpses of the preparations will be shared here."
   },
   "gallery_event_h": {
-    "en": "Event Photographs",
-    "bn": "অনুষ্ঠানের ছবি"
+    "en": "Event Photographs"
   },
   "gallery_event_p": {
-    "en": "Coming after April 24, 2027 · Memories from the celebration.",
-    "bn": "২৪ এপ্রিল, ২০২৭-এর পরে আসছে · উদ্‌যাপনের স্মৃতি।"
+    "en": "Coming after April 24, 2027 · Memories from the celebration."
   },
   "rsvp_pending_h": {
-    "en": "RSVP details coming soon",
-    "bn": "উপস্থিতি জানানোর তথ্য শীঘ্রই আসছে"
+    "en": "RSVP details coming soon"
   },
   "rsvp_pending_p": {
-    "en": "Registration is not open yet. Please check back here for the RSVP link.",
-    "bn": "উপস্থিতি জানানোর ব্যবস্থা এখনও চালু হয়নি। লিঙ্কের জন্য পরে এই পাতায় দেখুন।"
+    "en": "Registration is not open yet. Please check back here for the RSVP link."
   },
   "rsvp_eventbrite": {
-    "en": "RSVP on Eventbrite",
-    "bn": "Eventbrite-এ উপস্থিতি জানান"
+    "en": "RSVP on Eventbrite"
   },
   "rsvp_external_note": {
-    "en": "Complete your registration on Eventbrite. Your place is confirmed only when Eventbrite confirms your registration.",
-    "bn": "Eventbrite-এ নিবন্ধন সম্পূর্ণ করুন। Eventbrite থেকে নিশ্চিতকরণ পেলেই আপনার নিবন্ধন সম্পন্ন হবে।"
+    "en": "Complete your registration on Eventbrite. Your place is confirmed only when Eventbrite confirms your registration."
   },
   "cd_finished": {
-    "en": "Thank you for being part of Sia’s Arangetram.",
-    "bn": "সিয়ার অরঙ্গেত্রমের অংশ হওয়ার জন্য ধন্যবাদ।"
-  }
-};
-
-Object.assign(I18N, {
+    "en": "Thank you for being part of Sia’s Arangetram."
+  },
   "install_android": {
-    "en": "Android",
-    "bn": "অ্যান্ড্রয়েড"
+    "en": "Android"
   },
   "install_android_steps": {
-    "en": "Open this website in Chrome. Tap the three-dot menu, then <strong>Add to Home screen</strong> or <strong>Install app</strong>, and confirm.",
-    "bn": "Chrome-এ এই ওয়েবসাইটটি খুলুন। তিন-বিন্দুর মেনু থেকে <strong>Add to Home screen</strong> বা <strong>Install app</strong> বেছে নিয়ে নিশ্চিত করুন।"
+    "en": "Open this website in Chrome. Tap the three-dot menu, then <strong>Add to Home screen</strong> or <strong>Install app</strong>, and confirm."
   },
   "install_dismissed": {
-    "en": "No changes made. You can install whenever you’re ready using the steps below.",
-    "bn": "কোনো পরিবর্তন হয়নি। পরে নিচের ধাপগুলি অনুসরণ করে ইনস্টল করতে পারবেন।"
+    "en": "No changes made. You can install whenever you’re ready using the steps below."
   },
   "install_done": {
-    "en": "You’re using the app. Open it from your home screen next time.",
-    "bn": "আপনি অ্যাপটি ব্যবহার করছেন। পরের বার হোম স্ক্রিন থেকে খুলুন।"
+    "en": "You’re using the app. Open it from your home screen next time."
   },
   "install_intro": {
-    "en": "Add the website to your home screen for quick access to event details and photos.",
-    "bn": "অনুষ্ঠানের তথ্য ও ছবি সহজে দেখতে ওয়েবসাইটটি আপনার হোম স্ক্রিনে যোগ করুন।"
+    "en": "Add the website to your home screen for quick access to event details and photos."
   },
   "install_iphone": {
-    "en": "iPhone / iPad",
-    "bn": "আইফোন / আইপ্যাড"
+    "en": "iPhone / iPad"
   },
   "install_iphone_steps": {
-    "en": "Open this website in Safari. Tap <strong>Share</strong> (or <strong>More → Share</strong>), then <strong>Add to Home Screen</strong>. Turn on <strong>Open as Web App</strong> if shown, then tap <strong>Add</strong>.",
-    "bn": "Safari-তে এই ওয়েবসাইটটি খুলুন। <strong>Share</strong> (বা <strong>More → Share</strong>) থেকে <strong>Add to Home Screen</strong> বেছে নিন। <strong>Open as Web App</strong> দেখা গেলে চালু করুন, তারপর <strong>Add</strong> চাপুন।"
+    "en": "Open this website in Safari. Tap <strong>Share</strong> (or <strong>More → Share</strong>), then <strong>Add to Home Screen</strong>. Turn on <strong>Open as Web App</strong> if shown, then tap <strong>Add</strong>."
   },
   "install_link": {
-    "en": "Install app",
-    "bn": "অ্যাপ ইনস্টল করুন"
+    "en": "Install app"
   },
   "install_note": {
-    "en": "Opened from Instagram, Facebook or another app? Open this link in Safari or Chrome first. On a computer, use your browser’s install option if available.",
-    "bn": "Instagram, Facebook বা অন্য অ্যাপ থেকে খুলেছেন? প্রথমে Safari বা Chrome-এ এই লিঙ্কটি খুলুন। কম্পিউটারে ব্রাউজারের ইনস্টল অপশন থাকলে সেটি ব্যবহার করুন।"
+    "en": "Opened from Instagram, Facebook or another app? Open this link in Safari or Chrome first. On a computer, use your browser’s install option if available."
   },
   "install_retry": {
-    "en": "Use the browser steps below to install, or try again after reloading.",
-    "bn": "ইনস্টল করতে নিচের ধাপগুলি অনুসরণ করুন, অথবা পৃষ্ঠাটি আবার লোড করে চেষ্টা করুন।"
+    "en": "Use the browser steps below to install, or try again after reloading."
   },
   "install_title": {
-    "en": "Keep Sia’s Arangetram on your phone",
-    "bn": "সিয়ার অরঙ্গেত্রম আপনার ফোনে রাখুন"
+    "en": "Keep Sia’s Arangetram on your phone"
+  },
+  "social_title": {
+    "en": "Follow Sia’s journey"
+  },
+  "social_pending": {
+    "en": "Our social links will be shared here soon."
+  },
+  "social_soon": {
+    "en": "— Coming soon"
+  },
+  "calendar_title": {
+    "en": "Add to your calendar"
+  },
+  "calendar_note": {
+    "en": "Saves arrival at 4PM through the recital’s end at 7:30PM Eastern. Dinner follows at 8PM."
+  },
+  "calendar_google": {
+    "en": "Google Calendar"
+  },
+  "calendar_download": {
+    "en": "Apple / Outlook / Download .ics"
   }
-});
-
-Object.assign(I18N, {
- social_title: { en: "Follow Sia’s journey", bn: "সিয়ার নৃত্যযাত্রার সঙ্গে থাকুন" },
- social_pending: { en: "Our social links will be shared here soon.", bn: "আমাদের সোশ্যাল মিডিয়ার লিঙ্ক শীঘ্রই এখানে দেওয়া হবে।" },
- social_soon: { en: "— Coming soon", bn: "— শীঘ্রই আসছে" }
-});
-
-Object.assign(I18N, {
- calendar_title: { en: "Add to your calendar", bn: "আপনার ক্যালেন্ডারে যোগ করুন" },
- calendar_note: { en: "Saves arrival at 4PM through the recital’s end at 7:30PM Eastern. Dinner follows at 8PM.", bn: "ক্যালেন্ডারে বিকেল ৪টা থেকে সন্ধ্যা ৭:৩০ (ইস্টার্ন টাইম) পর্যন্ত যোগ হবে। রাত ৮টা থেকে নৈশভোজ।" },
- calendar_google: { en: "Google Calendar", bn: "Google Calendar" },
- calendar_download: { en: "Apple / Outlook / Download .ics", bn: "Apple / Outlook / .ics ডাউনলোড" }
-});
+};
