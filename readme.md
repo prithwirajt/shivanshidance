@@ -68,3 +68,9 @@ Guru image updated from the supplied Guru pic.png, converted to WebP without cro
 The page reads reviewed, permission-approved messages from blessings.json. It currently contains no messages. Never put unreviewed messages, contact details, or consent records in this public JSON. Publish only first name and message after obtaining consent; remove a published item on request.
 
 Before enabling SITE_CONFIG.blessingsFormUrl, the organizer must choose and configure a secure submission service with spam protection, private storage, moderation and consent to public display. Test a real authorized submission and organizer retrieval first. Only then set the approved HTTPS form URL. The site never claims clicking this link saves or publishes a message. GitHub Pages does not process form submissions.
+
+## Privacy-friendly analytics — activation pending
+
+analytics.js supports Cloudflare Web Analytics without cookies and respects Do Not Track and Global Privacy Control before loading the beacon. It is OFF by default; no analytics requests are sent with a blank site token. An organizer-owned Cloudflare Web Analytics site must be set up for shivanshi.ca. Supply its public beacon token in SITE_CONFIG.analyticsToken (never an API secret), then test an authorized visit and confirm it appears in the dashboard. The feature is not operational until that token and dashboard check are complete.
+
+Setup reference: https://developers.cloudflare.com/web-analytics/get-started/

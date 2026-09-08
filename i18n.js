@@ -416,3 +416,24 @@ Object.assign(I18N, {
     "en": "Event photos and recordings will be shared here after April 24, 2027."
   }
 });
+
+Object.assign(I18N, {
+  "privacy_title": {
+    "en": "Privacy & analytics"
+  },
+  "analytics_off": {
+    "en": "Optional visitor analytics are not enabled."
+  },
+  "analytics_on": {
+    "en": "We use cookie-free Cloudflare Web Analytics for traffic and performance measurements. This site skips analytics when your browser sends Do Not Track or Global Privacy Control."
+  },
+  "analytics_optout": {
+    "en": "Your browser’s privacy preference is respected: optional analytics are off for this visit."
+  },
+  "privacy_external": {
+    "en": "The embedded Google map and external links use their providers’ privacy policies. Language preference is saved only on your device."
+  },
+  "analytics_provider": {
+    "en": "About Cloudflare Web Analytics"
+  }
+});

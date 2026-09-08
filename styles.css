@@ -446,3 +446,8 @@ body.lightbox-open { overflow: hidden; }
 .gallery-tabs button { min-height: 44px; padding: .75rem 1.25rem; font: inherit; border: 1px solid var(--maroon); border-radius: 999px; background: #fff; color: var(--maroon); cursor: pointer; }
 .gallery-tabs [aria-selected="true"] { background: var(--maroon); color: #fff; }
 [role="tabpanel"]:focus-visible { outline: 3px solid var(--maroon); outline-offset: 5px; }
+
+.privacy-note { max-width: 680px; margin: 1.5rem auto 0; font-size: .95rem; }
+.privacy-note summary { cursor: pointer; min-height: 44px; }
+.privacy-note p { margin: .5rem 0; }
+.privacy-note a { color: #fff; text-underline-offset: 3px; }
