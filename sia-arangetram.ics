@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//shivanshi.ca//Sia Arangetram//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:arangetram-20270424@shivanshi.ca
+DTSTAMP:20260908T190000Z
+DTSTART:20270424T200000Z
+DTEND:20270424T233000Z
+SUMMARY:Sia's Arangetram - arrival and recital
+LOCATION:Fairview Library Theatre\, 35 Fairview Mall Drive\,
+ Toronto\, ON M2J 4S4
+DESCRIPTION:Arrival 4PM Eastern. Recital 4:30-7:30PM including intermission.
+ \nVegetarian dinner from 8PM (outside this calendar block).
+ \nLatest details: https://shivanshi.ca/
+URL:https://shivanshi.ca/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

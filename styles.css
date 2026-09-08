@@ -399,3 +399,8 @@ body.lightbox-open { overflow: hidden; }
 .social-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem; }
 .social-links a { padding: .75rem 1rem; border: 1px solid var(--maroon); border-radius: 12px; color: var(--maroon); }
 .social-links [aria-disabled="true"] { border-style: dashed; color: var(--ink-soft); cursor: default; }
+
+.calendar-links { margin: 2rem auto; text-align: center; }
+.calendar-links p { margin: .75rem 0 1rem; }
+.calendar-links .btn { margin: .35rem; }
+.calendar-download { color: var(--maroon); border-color: var(--maroon); }

@@ -485,3 +485,10 @@ Object.assign(I18N, {
  social_pending: { en: "Our social links will be shared here soon.", bn: "আমাদের সোশ্যাল মিডিয়ার লিঙ্ক শীঘ্রই এখানে দেওয়া হবে।" },
  social_soon: { en: "— Coming soon", bn: "— শীঘ্রই আসছে" }
 });
+
+Object.assign(I18N, {
+ calendar_title: { en: "Add to your calendar", bn: "আপনার ক্যালেন্ডারে যোগ করুন" },
+ calendar_note: { en: "Saves arrival at 4PM through the recital’s end at 7:30PM Eastern. Dinner follows at 8PM.", bn: "ক্যালেন্ডারে বিকেল ৪টা থেকে সন্ধ্যা ৭:৩০ (ইস্টার্ন টাইম) পর্যন্ত যোগ হবে। রাত ৮টা থেকে নৈশভোজ।" },
+ calendar_google: { en: "Google Calendar", bn: "Google Calendar" },
+ calendar_download: { en: "Apple / Outlook / Download .ics", bn: "Apple / Outlook / .ics ডাউনলোড" }
+});
