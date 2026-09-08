@@ -381,12 +381,13 @@ body.lightbox-open { overflow: hidden; }
 
 .brand-dance-icon { display: block; flex: 0 0 32px; object-fit: contain; }
 
-/* Text contrast: retain gold only as a decorative accent. */
-.eyebrow, .guru-role, .event-card h3, .lang-sep { color: var(--maroon); opacity: 1; }
+/* Gold highlights tuned for light and dark backgrounds. */
+.eyebrow, .guru-role, .event-card h3, .lang-sep { color: #795313; opacity: 1; }
 .hero-kicker, .hero-title span, .hero-sub strong, .hm-label,
-.cd-num, .hero-arrival, .scroll-cue { color: #fff; }
+.cd-num, .scroll-cue { color: #f3d58d; }
+.hero-arrival { color: #fff; }
 .hero-kicker, .hm-label, .cd-label { font-size: .875rem; }
-.footer-sub, .footer-links a { color: #fff; }
+.footer-sub, .footer-links a { color: #f3d58d; }
 .btn-primary { background: var(--maroon); color: #fff; }
 .btn-primary:hover { background: var(--maroon-deep); }
 .hero .btn-primary { background: #fff; color: var(--maroon-deep); }
