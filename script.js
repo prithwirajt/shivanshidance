@@ -94,6 +94,18 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 applyLanguage(currentLang);
 setInterval(renderCountdown, 1000);
 
+/* Add the cultural portrait to the existing gallery grid. */
+const dancePortraits = document.querySelector('.dance-portraits');
+if (dancePortraits && !document.getElementById('siaCulturalPortrait')) {
+  const culturalPortrait = document.createElement('a');
+  culturalPortrait.id = 'siaCulturalPortrait';
+  culturalPortrait.className = 'gallery-photo';
+  culturalPortrait.href = 'images/sia-cultural-portrait.jpg';
+  culturalPortrait.setAttribute('aria-haspopup', 'dialog');
+  culturalPortrait.innerHTML = '<img src="images/sia-cultural-portrait.jpg" alt="Sia in a traditional yellow sari holding a decorated ceremonial pot" loading="lazy" decoding="async" />';
+  dancePortraits.appendChild(culturalPortrait);
+}
+
 /* Native dialog keeps focus inside the expanded photo and supports Escape. */
 const photoLightbox = document.getElementById('photoLightbox');
 const lightboxImage = document.getElementById('lightboxImage');
