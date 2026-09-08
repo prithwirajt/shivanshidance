@@ -110,7 +110,7 @@ if (dancePortraits && !document.getElementById('siaCulturalPortrait')) {
   culturalImage.alt = 'Sia in a traditional yellow sari holding a decorated ceremonial pot';
   culturalImage.width = 650;
   culturalImage.height = 1084;
-  culturalImage.loading = 'lazy';
+  culturalImage.loading = 'eager';
   culturalImage.decoding = 'async';
 
   culturalPortrait.appendChild(culturalImage);
