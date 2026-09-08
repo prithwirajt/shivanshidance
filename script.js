@@ -94,47 +94,53 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 applyLanguage(currentLang);
 setInterval(renderCountdown, 1000);
 
-/* Add the cultural portrait. The original upload was split into binary chunks;
-   rebuild it in the browser so it renders reliably as one WebP image. */
+/* Add the latest cultural portrait to the gallery from base64 text parts. */
 const dancePortraits = document.querySelector('.dance-portraits');
 if (dancePortraits && !document.getElementById('siaCulturalPortrait')) {
   const culturalPortrait = document.createElement('a');
   const culturalImage = document.createElement('img');
+
   culturalPortrait.id = 'siaCulturalPortrait';
   culturalPortrait.className = 'gallery-photo';
-  culturalPortrait.href = 'images/sia-cultural-portrait.jpg?v=portrait-fallback-2';
+  culturalPortrait.href = '#';
+  culturalPortrait.hidden = true;
   culturalPortrait.setAttribute('aria-haspopup', 'dialog');
   culturalPortrait.setAttribute('aria-busy', 'true');
-  culturalImage.src = 'images/sia-cultural-portrait.jpg?v=portrait-fallback-2';
+
   culturalImage.alt = 'Sia in a traditional yellow sari holding a decorated ceremonial pot';
-  culturalImage.width = 971;
-  culturalImage.height = 1619;
+  culturalImage.width = 650;
+  culturalImage.height = 1084;
   culturalImage.loading = 'lazy';
   culturalImage.decoding = 'async';
+
   culturalPortrait.appendChild(culturalImage);
   dancePortraits.appendChild(culturalPortrait);
 
   const portraitParts = [
-    'images/sia-cultural-portrait.part-00',
-    'images/sia-cultural-portrait.part-01',
-    'images/sia-cultural-portrait.part-02',
-    'images/sia-cultural-portrait.part-03',
-    'images/sia-cultural-portrait.part-04'
+    'images/sia-cultural-portrait-v3.b64-00.txt',
+    'images/sia-cultural-portrait-v3.b64-01.txt',
+    'images/sia-cultural-portrait-v3.b64-02.txt',
+    'images/sia-cultural-portrait-v3.b64-03.txt',
+    'images/sia-cultural-portrait-v3.b64-04.txt'
   ];
 
-  Promise.all(portraitParts.map(path => fetch(path, { cache: 'no-store' }).then(response => {
-    if (!response.ok) throw new Error(`Portrait part failed: ${response.status}`);
-    return response.arrayBuffer();
-  }))).then(parts => {
-    const portraitBlob = new Blob(parts, { type: 'image/webp' });
-    const portraitUrl = URL.createObjectURL(portraitBlob);
-    culturalPortrait.href = portraitUrl;
-    culturalImage.src = portraitUrl;
-    culturalPortrait.removeAttribute('aria-busy');
-    window.addEventListener('pagehide', () => URL.revokeObjectURL(portraitUrl), { once: true });
+  Promise.all(portraitParts.map(path =>
+    fetch(`${path}?v=portrait-v3`, { cache: 'no-store' }).then(response => {
+      if (!response.ok) throw new Error(`Portrait part failed: ${response.status}`);
+      return response.text();
+    })
+  )).then(parts => {
+    const portraitData = `data:image/webp;base64,${parts.join('')}`;
+    culturalPortrait.href = portraitData;
+    culturalImage.addEventListener('load', () => {
+      culturalPortrait.hidden = false;
+      culturalPortrait.removeAttribute('aria-busy');
+    }, { once: true });
+    culturalImage.src = portraitData;
   }).catch(error => {
     culturalPortrait.removeAttribute('aria-busy');
-    console.error('Unable to reconstruct cultural portrait', error);
+    culturalPortrait.remove();
+    console.error('Unable to load cultural portrait', error);
   });
 }
 
