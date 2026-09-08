@@ -423,3 +423,13 @@ body.lightbox-open { overflow: hidden; }
 .skip-link { position: fixed; top: .75rem; left: .75rem; z-index: 10000; padding: .75rem 1.25rem; color: #fff; background: var(--maroon-deep); border: 2px solid #fff; border-radius: 8px; transform: translateY(-200%); font-size: 1rem; }
 .skip-link:focus { transform: translateY(0); }
 #mainContent:focus { outline: none; }
+
+/* Skip off-screen layout while retaining semantic content and anchor access. */
+@supports (content-visibility: auto) {
+  main > section:not(#home) { content-visibility: auto; contain-intrinsic-size: auto 750px; }
+  main > section:target, main > section:focus-within { content-visibility: visible; }
+}
+@media print {
+  main > section { content-visibility: visible !important; contain-intrinsic-size: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
