@@ -94,16 +94,48 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 applyLanguage(currentLang);
 setInterval(renderCountdown, 1000);
 
-/* Add the cultural portrait to the existing gallery grid. */
+/* Add the cultural portrait. The original upload was split into binary chunks;
+   rebuild it in the browser so it renders reliably as one WebP image. */
 const dancePortraits = document.querySelector('.dance-portraits');
 if (dancePortraits && !document.getElementById('siaCulturalPortrait')) {
   const culturalPortrait = document.createElement('a');
+  const culturalImage = document.createElement('img');
   culturalPortrait.id = 'siaCulturalPortrait';
   culturalPortrait.className = 'gallery-photo';
-  culturalPortrait.href = 'images/sia-cultural-portrait.jpg';
+  culturalPortrait.href = 'images/sia-cultural-portrait.jpg?v=portrait-fallback-2';
   culturalPortrait.setAttribute('aria-haspopup', 'dialog');
-  culturalPortrait.innerHTML = '<img src="images/sia-cultural-portrait.jpg" alt="Sia in a traditional yellow sari holding a decorated ceremonial pot" loading="lazy" decoding="async" />';
+  culturalPortrait.setAttribute('aria-busy', 'true');
+  culturalImage.src = 'images/sia-cultural-portrait.jpg?v=portrait-fallback-2';
+  culturalImage.alt = 'Sia in a traditional yellow sari holding a decorated ceremonial pot';
+  culturalImage.width = 971;
+  culturalImage.height = 1619;
+  culturalImage.loading = 'lazy';
+  culturalImage.decoding = 'async';
+  culturalPortrait.appendChild(culturalImage);
   dancePortraits.appendChild(culturalPortrait);
+
+  const portraitParts = [
+    'images/sia-cultural-portrait.part-00',
+    'images/sia-cultural-portrait.part-01',
+    'images/sia-cultural-portrait.part-02',
+    'images/sia-cultural-portrait.part-03',
+    'images/sia-cultural-portrait.part-04'
+  ];
+
+  Promise.all(portraitParts.map(path => fetch(path, { cache: 'no-store' }).then(response => {
+    if (!response.ok) throw new Error(`Portrait part failed: ${response.status}`);
+    return response.arrayBuffer();
+  }))).then(parts => {
+    const portraitBlob = new Blob(parts, { type: 'image/webp' });
+    const portraitUrl = URL.createObjectURL(portraitBlob);
+    culturalPortrait.href = portraitUrl;
+    culturalImage.src = portraitUrl;
+    culturalPortrait.removeAttribute('aria-busy');
+    window.addEventListener('pagehide', () => URL.revokeObjectURL(portraitUrl), { once: true });
+  }).catch(error => {
+    culturalPortrait.removeAttribute('aria-busy');
+    console.error('Unable to reconstruct cultural portrait', error);
+  });
 }
 
 /* Native dialog keeps focus inside the expanded photo and supports Escape. */
