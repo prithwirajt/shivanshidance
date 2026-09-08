@@ -378,3 +378,5 @@ const I18N = {
     "en": "Apple / Outlook / Download .ics"
   }
 };
+
+I18N.skip_content = { en: "Skip to content" };
