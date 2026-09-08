@@ -25,6 +25,7 @@ function applyLanguage(lang) {
 
 document.getElementById('langToggle')?.addEventListener('click', () => {
   applyLanguage(currentLang === 'en' ? 'bn' : 'en');
+  closeMenu();
 });
 
 function renderCountdown() {
@@ -92,3 +93,31 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 }
 applyLanguage(currentLang);
 setInterval(renderCountdown, 1000);
+
+/* Native dialog keeps focus inside the expanded photo and supports Escape. */
+const photoLightbox = document.getElementById('photoLightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+let photoTrigger = null;
+document.querySelectorAll('.gallery-photo').forEach(link => {
+  link.addEventListener('click', event => {
+    if (typeof photoLightbox.showModal !== 'function' || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    photoTrigger = link;
+    const thumbnail = link.querySelector('img');
+    lightboxImage.src = link.href;
+    lightboxImage.alt = thumbnail.alt;
+    photoLightbox.querySelector('button').setAttribute('aria-label', currentLang === 'bn' ? 'ছবি বন্ধ করুন' : 'Close photograph');
+    photoLightbox.setAttribute('aria-label', currentLang === 'bn' ? 'বড় করে দেখা ছবি' : 'Expanded photograph');
+    photoLightbox.showModal();
+    document.body.classList.add('lightbox-open');
+  });
+});
+photoLightbox.querySelector('.lightbox-close').addEventListener('click', () => photoLightbox.close());
+photoLightbox.addEventListener('click', event => {
+  if (event.target === photoLightbox) photoLightbox.close();
+});
+photoLightbox.addEventListener('close', () => {
+  document.body.classList.remove('lightbox-open');
+  lightboxImage.removeAttribute('src');
+  photoTrigger?.focus();
+});

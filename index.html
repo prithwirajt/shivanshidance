@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Marcellus&family=Mukta:wght@300;400;500;600&family=Baloo+Da+2:wght@400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=guest-ready-20260907" />
+<link rel="stylesheet" href="styles.css?v=gallery-20260908" />
 </head>
 <body>
 
@@ -44,7 +44,7 @@
 
 <!-- ================= HERO ================= -->
 <section id="home" class="hero">
-  <div class="hero-bg" style="background-image:url('images/hero-dancer.jpeg?v=20260907')"></div>
+  <div class="hero-bg" style="background-image:url('images/hero-sia.png')"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <p class="hero-kicker" data-i18n="hero_kicker">&#10022; With the blessings of the divine &#10022;</p>
@@ -67,7 +67,7 @@
         <span class="hm-value" data-i18n="val_venue">Fairview Library Theatre, Toronto</span>
       </div>
     </div>
-    <p class="hero-arrival" data-i18n="hero_arrival">Welcome &amp; refreshments from 4:00 PM · Toronto time</p>
+    <p class="hero-arrival" data-i18n="hero_arrival">Arrival time 4PM Eastern</p>
     <div class="hero-actions">
       <a href="#rsvp" class="btn btn-primary" data-i18n="btn_rsvp_now">RSVP Details</a>
       <a href="#event" class="btn btn-ghost" data-i18n="btn_event_details">Event Details</a>
@@ -230,9 +230,8 @@
   <h3 class="sub-head" data-i18n="gallery_photo_h">Sia in Dance</h3>
   <p class="gallery-sub-note" data-i18n="gallery_portrait_note">A few moments from Sia&rsquo;s dance journey.</p>
   <div class="dance-portraits">
-<img src="images/sia-dance-4.jpeg" alt="Sia in a blue and yellow costume with one arm raised" width="1122" height="1402" loading="lazy" decoding="async" />
-<img src="images/sia-dance-3.jpeg" alt="Sia standing in a blue and yellow Bharatanatyam costume" width="1015" height="1550" loading="lazy" decoding="async" />
-<img src="images/sia-dance-2.jpeg" alt="Sia in a white and gold dance costume" width="1024" height="1536" loading="lazy" decoding="async" />
+<a class="gallery-photo" href="images/sia-dance-3.jpeg" aria-haspopup="dialog"><img src="images/sia-dance-3.jpeg" alt="Sia standing in a blue and yellow Bharatanatyam costume" width="1015" height="1550" loading="lazy" decoding="async" /></a>
+<a class="gallery-photo" href="images/sia-dance-2.jpeg" aria-haspopup="dialog"><img src="images/sia-dance-2.jpeg" alt="Sia in a white and gold dance costume" width="1024" height="1536" loading="lazy" decoding="async" /></a>
 </div><div class="media-updates">
 <div class="media-card"><svg class="line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7h4l2-3h6l2 3h4v14H3z"/><circle cx="12" cy="14" r="4"/></svg><h3 data-i18n="gallery_rehearsal_h">Rehearsal Moments</h3><p data-i18n="gallery_rehearsal_p">Coming soon · Glimpses of the preparations will be shared here.</p></div>
 <div class="media-card"><svg class="line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7h4l2-3h6l2 3h4v14H3z"/><circle cx="12" cy="14" r="4"/></svg><h3 data-i18n="gallery_event_h">Event Photographs</h3><p data-i18n="gallery_event_p">Coming after April 24, 2027 · Memories from the celebration.</p></div>
@@ -266,9 +265,14 @@
   <p class="footer-fine" data-i18n="footer_fine">&#169; 2027 Sia&rsquo;s Arangetram · With love &amp; devotion to dance</p>
 </footer>
 
-<script src="i18n.js?v=guest-ready-20260907"></script>
-<script src="site-config.js?v=guest-ready-20260907"></script>
-<script src="script.js?v=guest-ready-20260907"></script>
+<dialog id="photoLightbox" class="photo-lightbox" aria-label="Expanded photograph">
+  <button type="button" class="lightbox-close" aria-label="Close photograph">&times;</button>
+  <img id="lightboxImage" alt="" />
+</dialog>
+
+<script src="i18n.js?v=gallery-20260908"></script>
+<script src="site-config.js?v=gallery-20260908"></script>
+<script src="script.js?v=gallery-20260908"></script>
 </body>
 </html>
 

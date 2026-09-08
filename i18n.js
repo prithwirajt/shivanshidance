@@ -364,8 +364,8 @@ const I18N = {
     "bn": "নৃত্যানুষ্ঠান শুরু হয়েছে। আমাদের সঙ্গে উদ্‌যাপনের জন্য ধন্যবাদ!"
   },
   "hero_arrival": {
-    "en": "Welcome &amp; refreshments from 4:00 PM · Toronto time",
-    "bn": "বিকেল ৪টা থেকে অভ্যর্থনা ও জলখাবার · টরন্টোর সময়"
+    "en": "Arrival time 4PM Eastern",
+    "bn": "আগমনের সময় বিকেল ৪টা (ইস্টার্ন টাইম)"
   },
   "venue_link": {
     "en": "Venue information",
