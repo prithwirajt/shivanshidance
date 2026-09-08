@@ -94,24 +94,60 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 applyLanguage(currentLang);
 setInterval(renderCountdown, 1000);
 
-/* Native dialog keeps focus inside the expanded photo and supports Escape. */
+/* Lightbox: buttons, arrow keys and one-finger horizontal swipes. */
 const photoLightbox = document.getElementById('photoLightbox');
 const lightboxImage = document.getElementById('lightboxImage');
+const photoCount = document.getElementById('photoCount');
 let photoTrigger = null;
+let photoIndex = 0;
+let activePhotos = [];
+function showPhoto(index) {
+  if (!activePhotos.length) return;
+  photoIndex = (index + activePhotos.length) % activePhotos.length;
+  const link = activePhotos[photoIndex];
+  lightboxImage.src = link.href;
+  lightboxImage.alt = link.querySelector('img').alt;
+  photoCount.textContent = (photoIndex + 1) + ' / ' + activePhotos.length;
+  photoLightbox.querySelector('.lightbox-close').setAttribute('aria-label', currentLang === 'bn' ? 'ছবি বন্ধ করুন' : 'Close photograph');
+  document.getElementById('photoPrev').setAttribute('aria-label', currentLang === 'bn' ? 'আগের ছবি' : 'Previous photograph');
+  document.getElementById('photoNext').setAttribute('aria-label', currentLang === 'bn' ? 'পরের ছবি' : 'Next photograph');
+  document.getElementById('photoPrev').disabled = activePhotos.length < 2;
+  document.getElementById('photoNext').disabled = activePhotos.length < 2;
+}
 document.querySelectorAll('.gallery-photo').forEach(link => {
   link.addEventListener('click', event => {
     if (typeof photoLightbox.showModal !== 'function' || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     photoTrigger = link;
-    const thumbnail = link.querySelector('img');
-    lightboxImage.src = link.href;
-    lightboxImage.alt = thumbnail.alt;
-    photoLightbox.querySelector('button').setAttribute('aria-label', currentLang === 'bn' ? 'ছবি বন্ধ করুন' : 'Close photograph');
+    activePhotos = [...document.querySelectorAll('.gallery-photo')].filter(item => !item.closest('[hidden]'));
     photoLightbox.setAttribute('aria-label', currentLang === 'bn' ? 'বড় করে দেখা ছবি' : 'Expanded photograph');
+    showPhoto(activePhotos.indexOf(link));
     photoLightbox.showModal();
     document.body.classList.add('lightbox-open');
   });
 });
+document.getElementById('photoPrev').addEventListener('click', () => showPhoto(photoIndex - 1));
+document.getElementById('photoNext').addEventListener('click', () => showPhoto(photoIndex + 1));
+photoLightbox.addEventListener('keydown', event => {
+  if (event.altKey || event.ctrlKey || event.metaKey) return;
+  if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    event.preventDefault();
+    showPhoto(photoIndex + (event.key === 'ArrowRight' ? 1 : -1));
+  }
+});
+let swipeStart = null;
+photoLightbox.addEventListener('touchstart', event => {
+  swipeStart = event.touches.length === 1 && event.target === lightboxImage
+    ? { x: event.touches[0].clientX, y: event.touches[0].clientY } : null;
+}, { passive: true });
+photoLightbox.addEventListener('touchend', event => {
+  if (!swipeStart || event.changedTouches.length !== 1 || event.touches.length) { swipeStart = null; return; }
+  const dx = event.changedTouches[0].clientX - swipeStart.x;
+  const dy = event.changedTouches[0].clientY - swipeStart.y;
+  swipeStart = null;
+  if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.5) showPhoto(photoIndex + (dx < 0 ? 1 : -1));
+}, { passive: true });
+photoLightbox.addEventListener('touchcancel', () => { swipeStart = null; }, { passive: true });
 photoLightbox.querySelector('.lightbox-close').addEventListener('click', () => photoLightbox.close());
 photoLightbox.addEventListener('click', event => {
   if (event.target === photoLightbox) photoLightbox.close();

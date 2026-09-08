@@ -362,6 +362,11 @@
 <dialog id="photoLightbox" class="photo-lightbox" aria-label="Expanded photograph">
   <button type="button" class="lightbox-close" aria-label="Close photograph">&times;</button>
   <img id="lightboxImage" alt="" />
+  <div class="lightbox-controls">
+    <button type="button" id="photoPrev" aria-label="Previous photograph">←</button>
+    <p id="photoCount" aria-live="polite" aria-atomic="true"></p>
+    <button type="button" id="photoNext" aria-label="Next photograph">→</button>
+  </div>
 </dialog>
 
 <script src="i18n.js?v=pwa-20260908"></script>
