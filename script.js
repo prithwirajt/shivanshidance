@@ -94,56 +94,6 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 applyLanguage(currentLang);
 setInterval(renderCountdown, 1000);
 
-/* Add the latest cultural portrait to the gallery from base64 text parts. */
-const dancePortraits = document.querySelector('.dance-portraits');
-if (dancePortraits && !document.getElementById('siaCulturalPortrait')) {
-  const culturalPortrait = document.createElement('a');
-  const culturalImage = document.createElement('img');
-
-  culturalPortrait.id = 'siaCulturalPortrait';
-  culturalPortrait.className = 'gallery-photo';
-  culturalPortrait.href = '#';
-  culturalPortrait.hidden = true;
-  culturalPortrait.setAttribute('aria-haspopup', 'dialog');
-  culturalPortrait.setAttribute('aria-busy', 'true');
-
-  culturalImage.alt = 'Sia in a traditional yellow sari holding a decorated ceremonial pot';
-  culturalImage.width = 650;
-  culturalImage.height = 1084;
-  culturalImage.loading = 'eager';
-  culturalImage.decoding = 'async';
-
-  culturalPortrait.appendChild(culturalImage);
-  dancePortraits.appendChild(culturalPortrait);
-
-  const portraitParts = [
-    'images/sia-cultural-portrait-v3.b64-00.txt',
-    'images/sia-cultural-portrait-v3.b64-01.txt',
-    'images/sia-cultural-portrait-v3.b64-02.txt',
-    'images/sia-cultural-portrait-v3.b64-03.txt',
-    'images/sia-cultural-portrait-v3.b64-04.txt'
-  ];
-
-  Promise.all(portraitParts.map(path =>
-    fetch(`${path}?v=portrait-v3`, { cache: 'no-store' }).then(response => {
-      if (!response.ok) throw new Error(`Portrait part failed: ${response.status}`);
-      return response.text();
-    })
-  )).then(parts => {
-    const portraitData = `data:image/webp;base64,${parts.join('')}`;
-    culturalPortrait.href = portraitData;
-    culturalImage.addEventListener('load', () => {
-      culturalPortrait.hidden = false;
-      culturalPortrait.removeAttribute('aria-busy');
-    }, { once: true });
-    culturalImage.src = portraitData;
-  }).catch(error => {
-    culturalPortrait.removeAttribute('aria-busy');
-    culturalPortrait.remove();
-    console.error('Unable to load cultural portrait', error);
-  });
-}
-
 /* Native dialog keeps focus inside the expanded photo and supports Escape. */
 const photoLightbox = document.getElementById('photoLightbox');
 const lightboxImage = document.getElementById('lightboxImage');
