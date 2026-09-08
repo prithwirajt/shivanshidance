@@ -62,3 +62,9 @@ Use the previous GitHub commit if a rollback is needed; do not force-push shared
 Share https://shivanshi.ca/#install. Android supports a browser install prompt when available; iPhone shows Safari Add to Home Screen instructions. English and Bengali supported. The worker caches only the offline notice so event information stays fresh. Device installation requires physical-device verification.
 
 Guru image updated from the supplied Guru pic.png, converted to WebP without cropping. Browser favicon and header dancer use Twemoji graphics by Twitter and contributors, licensed CC BY 4.0: https://github.com/jdecked/twemoji and https://creativecommons.org/licenses/by/4.0/.
+
+## Blessings wall — collection not yet enabled
+
+The page reads reviewed, permission-approved messages from blessings.json. It currently contains no messages. Never put unreviewed messages, contact details, or consent records in this public JSON. Publish only first name and message after obtaining consent; remove a published item on request.
+
+Before enabling SITE_CONFIG.blessingsFormUrl, the organizer must choose and configure a secure submission service with spam protection, private storage, moderation and consent to public display. Test a real authorized submission and organizer retrieval first. Only then set the approved HTTPS form URL. The site never claims clicking this link saves or publishes a message. GitHub Pages does not process form submissions.

@@ -380,3 +380,27 @@ const I18N = {
 };
 
 I18N.skip_content = { en: "Skip to content" };
+
+Object.assign(I18N, {
+  "blessings_title": {
+    "en": "Blessings for Sia"
+  },
+  "blessings_intro": {
+    "en": "A place for kind wishes from family and friends. Messages are published only with permission and after review."
+  },
+  "blessings_pending": {
+    "en": "The guestbook is opening soon. Message submissions are not available yet."
+  },
+  "blessings_submit": {
+    "en": "Send a blessing for review"
+  },
+  "blessings_notice": {
+    "en": "The form opens separately. Please use your first name only and avoid private details. Submitting does not publish your message automatically."
+  },
+  "blessings_empty": {
+    "en": "No blessings have been published yet."
+  },
+  "blessings_error": {
+    "en": "The blessings could not load. Please try again later."
+  }
+});
