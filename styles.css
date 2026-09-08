@@ -363,3 +363,20 @@ body.lightbox-open { overflow: hidden; }
 .photo-lightbox img { display: block; width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; }
 .lightbox-close { position: absolute; top: 0.75rem; right: 1rem; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.6); border-radius: 50%; background: #2d0c0c; color: #fff; font-size: 2rem; line-height: 1; cursor: pointer; }
 .lightbox-close:focus-visible { outline-color: #fff; }
+
+/* Home-screen installation */
+.install-section { max-width: 1000px; margin: 0 auto; padding: 3rem 1.5rem; scroll-margin-top: 1rem; }
+.install-heading { display: flex; gap: 1rem; align-items: center; margin-bottom: 1.25rem; }
+.install-heading img { flex: 0 0 64px; border-radius: 14px; }
+.install-heading h2 { font-size: clamp(1.4rem, 4vw, 2rem); }
+.install-section p { font-size: 1rem; }
+.install-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.25rem 0; }
+.install-steps details { padding: 1.25rem; background: var(--ivory-2); border: 1px solid var(--gold-light); border-radius: var(--radius); }
+.install-steps summary { cursor: pointer; color: var(--maroon); font-weight: 600; font-size: 1.1rem; min-height: 44px; }
+.install-note { color: var(--ink-soft); }
+#installApp { cursor: pointer; font: inherit; }
+#installStatus { margin-top: 1rem; }
+.install-section [hidden] { display: none !important; }
+@media (max-width: 600px) { .install-steps { grid-template-columns: 1fr; } .install-heading { align-items: flex-start; } }
+
+.brand-dance-icon { display: block; flex: 0 0 32px; object-fit: contain; }

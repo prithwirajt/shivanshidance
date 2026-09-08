@@ -9,7 +9,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Marcellus&family=Mukta:wght@300;400;500;600&family=Baloo+Da+2:wght@400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=gallery-20260908" />
+<link rel="stylesheet" href="styles.css?v=pwa-20260908" />
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="theme-color" content="#6b1a1a" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Sia" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+<script src="pwa.js?v=pwa-20260908" defer></script>
+<link rel="icon" href="icons/dance.svg?v=20260908" type="image/svg+xml" />
+<link rel="icon" href="icons/favicon-32.png?v=20260908" type="image/png" sizes="32x32" />
+<link rel="shortcut icon" href="favicon.ico?v=20260908" />
 </head>
 <body>
 
@@ -17,7 +26,7 @@
 <header id="navbar">
   <div class="nav-inner">
     <a href="#home" class="brand">
-      <span class="brand-mark">&#10086;</span>
+      <img class="brand-dance-icon" src="icons/dance.svg" alt="" width="32" height="32" />
       <span class="brand-text" data-i18n="brand">Sia&rsquo;s Arangetram</span>
     </a>
     <nav>
@@ -71,6 +80,7 @@
     <div class="hero-actions">
       <a href="#rsvp" class="btn btn-primary" data-i18n="btn_rsvp_now">RSVP Details</a>
       <a href="#event" class="btn btn-ghost" data-i18n="btn_event_details">Event Details</a>
+      <a href="#install" class="btn btn-ghost" data-i18n="install_link">Install app</a>
     </div>
     <div id="countdown" class="countdown" aria-label="Countdown to the event"></div>
   </div>
@@ -154,7 +164,7 @@
       <p class="guru-sources" data-i18n="guru_sources"><a href="https://www.sanjuktabanerjee.org/" target="_blank" rel="noopener noreferrer">Official artist profile</a></p>
     </div>
     <div class="guru-photo">
-      <img class="guru-portrait" src="images/guru-sanjukta.jpg" alt="Dr. Sanjukta Banerjee in a classical dance pose" width="1280" height="1318" loading="lazy" decoding="async" />
+      <img class="guru-portrait" src="images/guru-sanjukta-20260908.webp" alt="Dr. Sanjukta Banerjee in a classical dance pose" width="1024" height="1536" loading="lazy" decoding="async" />
       <div class="photo-caption" data-i18n="guru_caption">Dr. Sanjukta Banerjee</div>
     </div>
   </div>
@@ -254,6 +264,21 @@
 </section>
 
 <!-- ================= FOOTER ================= -->
+<section id="install" class="install-section" aria-labelledby="installTitle">
+  <div class="install-heading">
+    <img src="icons/icon-192.png" alt="" width="64" height="64" loading="lazy" />
+    <div><h2 id="installTitle" data-i18n="install_title">Keep Sia’s Arangetram on your phone</h2>
+    <p data-i18n="install_intro">Add the website to your home screen for quick access to event details and photos.</p></div>
+  </div>
+  <button type="button" class="btn btn-primary" id="installApp" hidden data-i18n="install_link">Install app</button>
+  <p id="installStatus" role="status" hidden></p>
+  <div class="install-steps" id="installSteps">
+    <details open><summary data-i18n="install_android">Android</summary><p data-i18n="install_android_steps">Open this website in Chrome. Tap the three-dot menu, then <strong>Add to Home screen</strong> or <strong>Install app</strong>, and confirm.</p></details>
+    <details open><summary data-i18n="install_iphone">iPhone / iPad</summary><p data-i18n="install_iphone_steps">Open this website in Safari. Tap <strong>Share</strong> (or <strong>More → Share</strong>), then <strong>Add to Home Screen</strong>. Turn on <strong>Open as Web App</strong> if shown, then tap <strong>Add</strong>.</p></details>
+  </div>
+  <p class="install-note" id="installNote" data-i18n="install_note">Opened from Instagram, Facebook or another app? Open this link in Safari or Chrome first. On a computer, use your browser’s install option if available.</p>
+</section>
+
 <footer class="footer">
   <div class="footer-ornament">&#10086;</div>
   <p class="footer-title" data-i18n="footer_title">Shivanshi &ldquo;Sia&rdquo; Thakur &mdash; Arangetram</p>
@@ -270,7 +295,7 @@
   <img id="lightboxImage" alt="" />
 </dialog>
 
-<script src="i18n.js?v=gallery-20260908"></script>
+<script src="i18n.js?v=pwa-20260908"></script>
 <script src="site-config.js?v=gallery-20260908"></script>
 <script src="script.js?v=gallery-20260908"></script>
 </body>

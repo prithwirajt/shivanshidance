@@ -56,3 +56,9 @@ References:
 Push changes to `main`; the current Netlify connection deploys them to https://shivanshi.ca/.
 Update asset query versions after changes and verify both languages after a reload.
 Use the previous GitHub commit if a rollback is needed; do not force-push shared history.
+
+
+## Home screen installation
+Share https://shivanshi.ca/#install. Android supports a browser install prompt when available; iPhone shows Safari Add to Home Screen instructions. English and Bengali supported. The worker caches only the offline notice so event information stays fresh. Device installation requires physical-device verification.
+
+Guru image updated from the supplied Guru pic.png, converted to WebP without cropping. Browser favicon and header dancer use Twemoji graphics by Twitter and contributors, licensed CC BY 4.0: https://github.com/jdecked/twemoji and https://creativecommons.org/licenses/by/4.0/.

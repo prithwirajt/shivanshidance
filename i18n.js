@@ -432,3 +432,50 @@ const I18N = {
     "bn": "সিয়ার অরঙ্গেত্রমের অংশ হওয়ার জন্য ধন্যবাদ।"
   }
 };
+
+Object.assign(I18N, {
+  "install_android": {
+    "en": "Android",
+    "bn": "অ্যান্ড্রয়েড"
+  },
+  "install_android_steps": {
+    "en": "Open this website in Chrome. Tap the three-dot menu, then <strong>Add to Home screen</strong> or <strong>Install app</strong>, and confirm.",
+    "bn": "Chrome-এ এই ওয়েবসাইটটি খুলুন। তিন-বিন্দুর মেনু থেকে <strong>Add to Home screen</strong> বা <strong>Install app</strong> বেছে নিয়ে নিশ্চিত করুন।"
+  },
+  "install_dismissed": {
+    "en": "No changes made. You can install whenever you’re ready using the steps below.",
+    "bn": "কোনো পরিবর্তন হয়নি। পরে নিচের ধাপগুলি অনুসরণ করে ইনস্টল করতে পারবেন।"
+  },
+  "install_done": {
+    "en": "You’re using the app. Open it from your home screen next time.",
+    "bn": "আপনি অ্যাপটি ব্যবহার করছেন। পরের বার হোম স্ক্রিন থেকে খুলুন।"
+  },
+  "install_intro": {
+    "en": "Add the website to your home screen for quick access to event details and photos.",
+    "bn": "অনুষ্ঠানের তথ্য ও ছবি সহজে দেখতে ওয়েবসাইটটি আপনার হোম স্ক্রিনে যোগ করুন।"
+  },
+  "install_iphone": {
+    "en": "iPhone / iPad",
+    "bn": "আইফোন / আইপ্যাড"
+  },
+  "install_iphone_steps": {
+    "en": "Open this website in Safari. Tap <strong>Share</strong> (or <strong>More → Share</strong>), then <strong>Add to Home Screen</strong>. Turn on <strong>Open as Web App</strong> if shown, then tap <strong>Add</strong>.",
+    "bn": "Safari-তে এই ওয়েবসাইটটি খুলুন। <strong>Share</strong> (বা <strong>More → Share</strong>) থেকে <strong>Add to Home Screen</strong> বেছে নিন। <strong>Open as Web App</strong> দেখা গেলে চালু করুন, তারপর <strong>Add</strong> চাপুন।"
+  },
+  "install_link": {
+    "en": "Install app",
+    "bn": "অ্যাপ ইনস্টল করুন"
+  },
+  "install_note": {
+    "en": "Opened from Instagram, Facebook or another app? Open this link in Safari or Chrome first. On a computer, use your browser’s install option if available.",
+    "bn": "Instagram, Facebook বা অন্য অ্যাপ থেকে খুলেছেন? প্রথমে Safari বা Chrome-এ এই লিঙ্কটি খুলুন। কম্পিউটারে ব্রাউজারের ইনস্টল অপশন থাকলে সেটি ব্যবহার করুন।"
+  },
+  "install_retry": {
+    "en": "Use the browser steps below to install, or try again after reloading.",
+    "bn": "ইনস্টল করতে নিচের ধাপগুলি অনুসরণ করুন, অথবা পৃষ্ঠাটি আবার লোড করে চেষ্টা করুন।"
+  },
+  "install_title": {
+    "en": "Keep Sia’s Arangetram on your phone",
+    "bn": "সিয়ার অরঙ্গেত্রম আপনার ফোনে রাখুন"
+  }
+});
