@@ -411,3 +411,9 @@ body.lightbox-open { overflow: hidden; }
 .lightbox-controls button:disabled { opacity: .5; cursor: default; }
 .lightbox-controls button:focus-visible { outline-color: #fff; }
 #photoCount { min-width: 4rem; text-align: center; font-size: 1rem; }
+
+@media (max-width: 900px) {
+  .nav-links { visibility: hidden; overflow-y: auto; max-width: 100vw; }
+  .nav-links.open { visibility: visible; }
+  .nav-toggle { min-width: 44px; min-height: 44px; }
+}
