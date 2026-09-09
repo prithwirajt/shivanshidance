@@ -5,12 +5,12 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:arangetram-20270424@shivanshi.ca
-DTSTAMP:20260908T190000Z
+DTSTAMP:20260909T060000Z
+SEQUENCE:1
 DTSTART:20270424T200000Z
 DTEND:20270424T233000Z
 SUMMARY:Sia's Arangetram - arrival and recital
-LOCATION:Fairview Library Theatre\, 35 Fairview Mall Drive\,
- Toronto\, ON M2J 4S4
+LOCATION:Venue TBA
 DESCRIPTION:Arrival 4PM Eastern. Recital 4:30-7:30PM including intermission.
  \nDinner from 8PM (outside this calendar block).
  \nLatest details: https://shivanshi.ca/

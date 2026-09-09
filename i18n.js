@@ -51,7 +51,7 @@ const I18N = {
     "en": "Venue"
   },
   "val_venue": {
-    "en": "Fairview Library Theatre, Toronto"
+    "en": "TBA"
   },
   "btn_rsvp_now": {
     "en": "RSVP Details"
@@ -180,7 +180,7 @@ const I18N = {
     "en": "Venue"
   },
   "event_venue_p": {
-    "en": "<strong>Fairview Library Theatre</strong><br />35 Fairview Mall Drive<br />Toronto, ON M2J 4S4"
+    "en": "<strong>TBA</strong><br />Venue details will be announced here."
   },
   "event_music_h": {
     "en": "Musicians"
@@ -201,10 +201,10 @@ const I18N = {
     "en": "<strong>To Be Announced</strong>"
   },
   "map_h": {
-    "en": "Find Us"
+    "en": "Venue"
   },
   "map_note": {
-    "en": "Parking and arrival guidance: <strong>To Be Announced</strong>."
+    "en": "Venue, directions and parking information will be shared once confirmed."
   },
   "sched_h": {
     "en": "The Evening"
@@ -249,7 +249,7 @@ const I18N = {
     "en": "Shivanshi &ldquo;Sia&rdquo; Thakur &mdash; Arangetram"
   },
   "footer_sub": {
-    "en": "April 24, 2027 · Fairview Library Theatre, Toronto<br />Welcome 4:00 PM · Performance 4:30 PM"
+    "en": "April 24, 2027 · Venue TBA<br />Arrival 4:00 PM · Performance 4:30 PM"
   },
   "footer_thanks": {
     "en": "With heartfelt gratitude to Guru Dr. Sanjukta Banerjee, our family &amp; friends."
@@ -431,7 +431,7 @@ Object.assign(I18N, {
     "en": "Your browser’s privacy preference is respected: optional analytics are off for this visit."
   },
   "privacy_external": {
-    "en": "The embedded Google map and external links use their providers’ privacy policies. Language preference is saved only on your device."
+    "en": "External links use their providers’ privacy policies. Language preference is saved only on your device."
   },
   "analytics_provider": {
     "en": "About Cloudflare Web Analytics"
