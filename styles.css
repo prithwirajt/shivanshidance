@@ -322,8 +322,8 @@ code { background: rgba(107,26,26,0.08); padding: 1px 6px; border-radius: 4px; f
 .schedule-note, .gallery-sub-note { color: var(--ink-soft); margin-top: 1rem; }
 .venue-link a { color: var(--maroon); text-underline-offset: 3px; }
 .gallery-sub-note { text-align: center; margin-bottom: 1.5rem; }
-.dance-portraits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; align-items: start; }
-.dance-portraits img { display: block; width: 100%; height: auto; border-radius: var(--radius); }
+.dance-portraits { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; align-items: start; margin-bottom: 2rem; }
+.dance-portraits img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: contain; background: var(--ivory-2); border-radius: var(--radius); }
 .media-updates { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
 .media-card { padding: 2rem 1.4rem; border: 1px solid var(--gold-light); border-radius: var(--radius); text-align: center; background: var(--ivory-2); }
 .media-card h3 { color: var(--maroon); font-size: 1.25rem; margin: 1rem 0 0.7rem; }
@@ -339,7 +339,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--maroon); outlin
   .about-photo, .guru-photo { width: 100%; }
 }
 @media (max-width: 520px) {
-  .dance-portraits { grid-template-columns: 1fr; max-width: 360px; margin: auto; }
+  .dance-portraits { gap: 0.65rem; }
   .timeline li { flex-direction: column; gap: 0.25rem; }
   .t-time { flex-basis: auto; }
   .registration-card { padding: 1.75rem 1.25rem; }
@@ -452,3 +452,8 @@ body.lightbox-open { overflow: hidden; }
 .privacy-note summary { cursor: pointer; min-height: 44px; }
 .privacy-note p { margin: .5rem 0; }
 .privacy-note a { color: #fff; text-underline-offset: 3px; }
+
+
+@media (max-width: 900px) {
+  .dance-portraits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
