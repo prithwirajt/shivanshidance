@@ -189,10 +189,10 @@ const I18N = {
     "en": "<strong>To Be Announced</strong><br />Artist details will be shared here"
   },
   "event_food_h": {
-    "en": "Vegetarian Dinner"
+    "en": "Dinner"
   },
   "event_food_p": {
-    "en": "<strong>8:00 PM onwards</strong><br />Please join us after the recital"
+    "en": "<strong>8:00 PM onwards</strong><br />Please join us after the recital<br /><small>Vegetarian</small>"
   },
   "event_guest_h": {
     "en": "Special Guest"
@@ -219,7 +219,7 @@ const I18N = {
     "en": "30-minute intermission · Exact time to be announced"
   },
   "sched_4": {
-    "en": "Vegetarian dinner"
+    "en": "Dinner"
   },
   "gallery_eyebrow": {
     "en": "A Journey in Dance"
@@ -243,7 +243,7 @@ const I18N = {
     "en": "RSVP"
   },
   "rsvp_intro": {
-    "en": "We look forward to celebrating with you and sharing a vegetarian dinner after the recital."
+    "en": "We look forward to celebrating with you and sharing dinner after the recital."
   },
   "footer_title": {
     "en": "Shivanshi &ldquo;Sia&rdquo; Thakur &mdash; Arangetram"
