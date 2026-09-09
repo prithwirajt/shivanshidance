@@ -141,5 +141,7 @@
   "analytics_on": "ভিজিট ও পারফরম্যান্স মাপতে কুকি-মুক্ত Cloudflare Web Analytics ব্যবহার করা হয়। ব্রাউজারে Do Not Track বা Global Privacy Control চালু থাকলে এই সাইট অ্যানালিটিক্স চালায় না।",
   "analytics_optout": "আপনার ব্রাউজারের গোপনীয়তার পছন্দ অনুযায়ী এই ভিজিটে ঐচ্ছিক অ্যানালিটিক্স বন্ধ আছে।",
   "privacy_external": "এমবেড করা Google ম্যাপ ও বাইরের লিঙ্কের নিজস্ব গোপনীয়তার নীতি আছে। ভাষার পছন্দ শুধু আপনার ডিভাইসে সংরক্ষিত হয়।",
-  "analytics_provider": "Cloudflare Web Analytics সম্পর্কে"
+  "analytics_provider": "Cloudflare Web Analytics সম্পর্কে",
+  "gallery_guru_h": "গুরুর সঙ্গে",
+  "gallery_guru_note": "ড. সংযুক্তা বন্দ্যোপাধ্যায়ের সঙ্গে স্বীকৃতির কিছু মুহূর্ত।"
 }

@@ -437,3 +437,6 @@ Object.assign(I18N, {
     "en": "About Cloudflare Web Analytics"
   }
 });
+
+
+Object.assign(I18N, {"gallery_guru_h": {"en": "With her Guru"}, "gallery_guru_note": {"en": "Moments of recognition with Dr. Sanjukta Banerjee."}});

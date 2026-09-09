@@ -34,7 +34,7 @@ async function requestLanguage(lang) {
     toggle.setAttribute('aria-busy', 'true');
     status.textContent = 'Loading Bengali…';
     try {
-      const response = await fetch('i18n-bn.json?v=site-refresh-20260908');
+      const response = await fetch('i18n-bn.json?v=photos-20260909');
       if (!response.ok) throw new Error('Language unavailable');
       const entries = await response.json();
       Object.entries(entries).forEach(([key, value]) => {
@@ -267,3 +267,4 @@ if (galleryTabs.length) {
   document.querySelector('.gallery-tabs').hidden = false;
   selectGalleryTab(galleryTabs[0]);
 }
+
