@@ -454,3 +454,42 @@ Object.assign(I18N, {"calendar_note":{"en":"Saves arrival at 4PM through the rec
 Object.assign(I18N, {"margam_title":{"en":"Programme &amp; Repertoire"}});
 
 Object.assign(I18N, {"margam_nagendra":{"en":"<strong>Nagendra Haraya</strong> — A devotional offering to Lord Shiva, inspired by the Shiva Panchakshara Stotram and its praise of his divine form."}});
+
+Object.assign(I18N, {
+  "event_music_p": {
+    "en": "<a href=\"#musicians\">Meet the musicians</a><br />Vocal · Mridangam · Flute"
+  },
+  "musician_arun_bio": {
+    "en": "An Indian-born Canadian Carnatic vocalist specializing in Abhinaya Sangeetham, Arun Gopinath brings over 28 years of performance experience. He holds a Master’s in Carnatic Music from Kannur University and a Ganabhushan Diploma in Violin from Chembai Music College. In 2014, he founded KAISIKI Performing Arts Centre in Canada, where he nurtures the next generation through musical tradition and devotion to the Guru."
+  },
+  "musician_arun_name": {
+    "en": "Shri Arun Gopinath"
+  },
+  "musician_arun_role": {
+    "en": "Carnatic Vocal"
+  },
+  "musician_rathiruban_bio": {
+    "en": "A versatile mridangam artist and disciple of Shri K. Kannathasan, Rathiruban Paramsothy is known for sensitive, adaptable accompaniment to dance, vocal and instrumental performances. An A-grade artist in mridangam and ghatam with the Sri Lanka Broadcasting Corporation, he has performed across Sri Lanka, Europe and North America. He founded Layabrindham Fine Arts in Toronto, teaching percussion and creating performance opportunities for young musicians."
+  },
+  "musician_rathiruban_name": {
+    "en": "Shri Rathiruban Paramsothy"
+  },
+  "musician_rathiruban_role": {
+    "en": "Mridangam"
+  },
+  "musician_vishnu_bio": {
+    "en": "An emerging Carnatic flautist, Vishnu began training with Shri Kudamaloor Janardhanan and now studies the gayaka, or vocal-like, flute style with Shri JB Sruthi Sagar. He also learns vocal music from Shri Arun Gopinath and mridangam from Shri Rathiruban Paramsothy. His performances across North America and India have earned first prizes and opportunities to share the stage with his mentors and distinguished artists."
+  },
+  "musician_vishnu_name": {
+    "en": "Vishnu"
+  },
+  "musician_vishnu_role": {
+    "en": "Flute"
+  },
+  "musicians_intro": {
+    "en": "The artists accompanying Sia’s Arangetram."
+  },
+  "musicians_title": {
+    "en": "The Musicians"
+  }
+});
