@@ -450,3 +450,7 @@ Object.assign(I18N, {"sched_meet_time":{"en":"7:30–8:00 PM"}});
 Object.assign(I18N, {"sched_meet":{"en":"Meet &amp; greet"}});
 
 Object.assign(I18N, {"calendar_note":{"en":"Saves arrival at 4PM through the recital’s end at 7:30PM Eastern. Meet &amp; greet 7:30–8PM; dinner from 8PM."}});
+
+Object.assign(I18N, {"margam_title":{"en":"Programme &amp; Repertoire"}});
+
+Object.assign(I18N, {"margam_kuratthi":{"en":"<strong>Kuratthi</strong> — A lively folk item, bringing a playful spirit to the recital through energetic movement and expressive storytelling."}});

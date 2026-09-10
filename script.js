@@ -34,7 +34,7 @@ async function requestLanguage(lang) {
     toggle.setAttribute('aria-busy', 'true');
     status.textContent = 'Loading Bengali…';
     try {
-      const response = await fetch('i18n-bn.json?v=meet-20260910');
+      const response = await fetch('i18n-bn.json?v=repertoire-20260910');
       if (!response.ok) throw new Error('Language unavailable');
       const entries = await response.json();
       Object.entries(entries).forEach(([key, value]) => {
