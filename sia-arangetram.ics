@@ -5,12 +5,13 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:arangetram-20270424@shivanshi.ca
-DTSTAMP:20260909T060000Z
-SEQUENCE:1
+DTSTAMP:20260910T140000Z
+SEQUENCE:2
 DTSTART:20270424T200000Z
 DTEND:20270424T233000Z
 SUMMARY:Sia's Arangetram - arrival and recital
-LOCATION:Venue TBA
+LOCATION:Lester B. Pearson Memorial Theatre\, 150 Central Park Drive\,
+ Brampton\, ON L6T 1B4
 DESCRIPTION:Arrival 4PM Eastern. Recital 4:30-7:30PM including intermission.
  \nDinner from 8PM (outside this calendar block).
  \nLatest details: https://shivanshi.ca/

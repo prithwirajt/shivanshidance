@@ -51,7 +51,7 @@ const I18N = {
     "en": "Venue"
   },
   "val_venue": {
-    "en": "TBA"
+    "en": "Lester B. Pearson Memorial Theatre, Brampton"
   },
   "btn_rsvp_now": {
     "en": "RSVP Details"
@@ -180,7 +180,7 @@ const I18N = {
     "en": "Venue"
   },
   "event_venue_p": {
-    "en": "<strong>TBA</strong><br />Venue details will be announced here."
+    "en": "<strong>Lester B. Pearson Memorial Theatre</strong><br />150 Central Park Drive<br />Brampton, ON L6T 1B4"
   },
   "event_music_h": {
     "en": "Musicians"
@@ -201,10 +201,10 @@ const I18N = {
     "en": "<strong>To Be Announced</strong>"
   },
   "map_h": {
-    "en": "Venue"
+    "en": "Getting There"
   },
   "map_note": {
-    "en": "Venue, directions and parking information will be shared once confirmed."
+    "en": "Located in the Brampton Civic Centre. Please arrive at 4:00 PM Eastern; the performance begins at 4:30 PM."
   },
   "sched_h": {
     "en": "The Evening"
@@ -249,7 +249,7 @@ const I18N = {
     "en": "Shivanshi &ldquo;Sia&rdquo; Thakur &mdash; Arangetram"
   },
   "footer_sub": {
-    "en": "April 24, 2027 · Venue TBA<br />Arrival 4:00 PM · Performance 4:30 PM"
+    "en": "April 24, 2027 · Lester B. Pearson Memorial Theatre, Brampton<br />Arrival 4:00 PM · Performance 4:30 PM"
   },
   "footer_thanks": {
     "en": "With heartfelt gratitude to Guru Dr. Sanjukta Banerjee, our family &amp; friends."
@@ -442,3 +442,5 @@ Object.assign(I18N, {
 Object.assign(I18N, {"gallery_guru_h": {"en": "With her Guru"}, "gallery_guru_note": {"en": "Moments of recognition with Dr. Sanjukta Banerjee."}});
 
 Object.assign(I18N, {margam_8: {en: "<strong>Thillana</strong> — A vibrant finale of brisk footwork, sculptural poses and joyful rhythm."}});
+
+Object.assign(I18N, {"venue_directions":{"en":"Get directions"}});
