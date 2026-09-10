@@ -453,4 +453,4 @@ Object.assign(I18N, {"calendar_note":{"en":"Saves arrival at 4PM through the rec
 
 Object.assign(I18N, {"margam_title":{"en":"Programme &amp; Repertoire"}});
 
-Object.assign(I18N, {"margam_kuratthi":{"en":"<strong>Kuratthi</strong> — A lively folk item, bringing a playful spirit to the recital through energetic movement and expressive storytelling."}});
+Object.assign(I18N, {"margam_nagendra":{"en":"<strong>Nagendra Haraya</strong> — A devotional offering to Lord Shiva, inspired by the Shiva Panchakshara Stotram and its praise of his divine form."}});
