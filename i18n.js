@@ -457,7 +457,7 @@ Object.assign(I18N, {"margam_nagendra":{"en":"<strong>Nagendra Haraya</strong> �
 
 Object.assign(I18N, {
   "event_music_p": {
-    "en": "<a href=\"#musicians\">Meet the musicians</a><br />Vocal · Mridangam · Flute"
+    "en": "<a href=\"musicians.html\">Meet the musicians</a><br />Vocal · Mridangam · Flute"
   },
   "musician_arun_bio": {
     "en": "An Indian-born Canadian Carnatic vocalist specializing in Abhinaya Sangeetham, Arun Gopinath brings over 28 years of performance experience. He holds a Master’s in Carnatic Music from Kannur University and a Ganabhushan Diploma in Violin from Chembai Music College. In 2014, he founded KAISIKI Performing Arts Centre in Canada, where he nurtures the next generation through musical tradition and devotion to the Guru."
@@ -493,3 +493,5 @@ Object.assign(I18N, {
     "en": "The Musicians"
   }
 });
+
+Object.assign(I18N, {musicians_back: {en: "Back to Event Details"}});

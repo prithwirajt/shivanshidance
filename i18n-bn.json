@@ -61,7 +61,7 @@
   "event_venue_h": "স্থান",
   "event_venue_p": "<strong>লেস্টার বি. পিয়ারসন মেমোরিয়াল থিয়েটার</strong><br />150 Central Park Drive<br />Brampton, ON L6T 1B4",
   "event_music_h": "বাদ্যশিল্পী",
-  "event_music_p": "<a href=\"#musicians\">সংগীতশিল্পীদের পরিচয়</a><br />কণ্ঠসংগীত · মৃদঙ্গম · বাঁশি",
+  "event_music_p": "<a href=\"musicians.html\">সংগীতশিল্পীদের পরিচয়</a><br />কণ্ঠসংগীত · মৃদঙ্গম · বাঁশি",
   "event_food_h": "নৈশভোজ",
   "event_food_p": "<strong>রাত ৮টা থেকে</strong><br />অনুষ্ঠানের পরে আমাদের সঙ্গে যোগ দিন<br /><small>নিরামিষ</small>",
   "event_guest_h": "বিশেষ অতিথি",
@@ -159,5 +159,6 @@
   "musician_vishnu_name": "বিষ্ণু",
   "musician_vishnu_role": "বাঁশি",
   "musicians_intro": "সিয়ার আরঙ্গেত্রমে সঙ্গত করবেন যাঁরা।",
-  "musicians_title": "সংগীতশিল্পীরা"
+  "musicians_title": "সংগীতশিল্পীরা",
+  "musicians_back": "অনুষ্ঠানের বিবরণে ফিরুন"
 }
