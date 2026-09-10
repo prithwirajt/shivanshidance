@@ -444,3 +444,9 @@ Object.assign(I18N, {"gallery_guru_h": {"en": "With her Guru"}, "gallery_guru_no
 Object.assign(I18N, {margam_8: {en: "<strong>Thillana</strong> — A vibrant finale of brisk footwork, sculptural poses and joyful rhythm."}});
 
 Object.assign(I18N, {"venue_directions":{"en":"Get directions"}});
+
+Object.assign(I18N, {"sched_meet_time":{"en":"7:30–8:00 PM"}});
+
+Object.assign(I18N, {"sched_meet":{"en":"Meet &amp; greet"}});
+
+Object.assign(I18N, {"calendar_note":{"en":"Saves arrival at 4PM through the recital’s end at 7:30PM Eastern. Meet &amp; greet 7:30–8PM; dinner from 8PM."}});
