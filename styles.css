@@ -323,9 +323,8 @@ code { background: rgba(107,26,26,0.08); padding: 1px 6px; border-radius: 4px; f
 .venue-link a { color: var(--maroon); text-underline-offset: 3px; }
 .gallery-sub-note { text-align: center; margin-bottom: 1.5rem; }
 .dance-portraits { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; align-items: start; margin-bottom: 2rem; }
-.dance-portraits img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: contain; background: var(--ivory-2); border-radius: var(--radius); }
-.guru-gallery .gallery-photo { aspect-ratio: 3 / 4; overflow: hidden; }
-.guru-gallery .gallery-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+.dance-portraits .gallery-photo { position: relative; aspect-ratio: 3 / 4; overflow: hidden; }
+.dance-portraits .gallery-photo img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; border-radius: var(--radius); }
 .media-updates { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
 .media-card { padding: 2rem 1.4rem; border: 1px solid var(--gold-light); border-radius: var(--radius); text-align: center; background: var(--ivory-2); }
 .media-card h3 { color: var(--maroon); font-size: 1.25rem; margin: 1rem 0 0.7rem; }
