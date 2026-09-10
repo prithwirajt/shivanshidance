@@ -463,8 +463,8 @@ body.lightbox-open { overflow: hidden; }
 .musicians-intro { text-align: center; color: var(--ink-soft); margin: 0 auto 2rem; }
 .musicians-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
 .musician-profile { min-width: 0; background: white; border-radius: var(--radius); overflow: hidden; }
-.musician-photo { height: 320px; padding: 1rem; background: var(--ivory-2); }
-.musician-photo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.musician-photo { position: relative; height: 320px; padding: 0; overflow: hidden; background: var(--ivory-2); }
+.musician-photo img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
 .musician-copy { padding: 1.5rem; }
 .musician-copy h3 { color: var(--maroon); font-size: 1.5rem; line-height: 1.25; }
 .musician-copy .musician-role { margin: .5rem 0 1rem; color: var(--maroon); font-weight: 600; }
