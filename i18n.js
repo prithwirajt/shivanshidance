@@ -105,31 +105,31 @@ const I18N = {
     "en": "Across a full-length recital, the dancer performs alone, moving through a traditional repertoire that builds from pure rhythm to deep emotional storytelling."
   },
   "margam_title": {
-    "en": "The Margam &mdash; The Traditional Repertoire"
+    "en": "The Programme"
   },
   "margam_intro": {
-    "en": "A Bharatanatyam recital follows a <em>Margam</em> (&ldquo;the path&rdquo;). The pieces below introduce the traditional repertoire; Sia&rsquo;s final programme is <strong>To Be Announced</strong>."
+    "en": "Sia’s Arangetram unfolds through the following pieces, from the opening offering to the rhythmic finale."
   },
   "margam_1": {
-    "en": "<strong>Pushpanjali &amp; Alarippu</strong> — An opening flower offering and a rhythmic dance that introduces movement."
+    "en": "<strong>Pushpanjali &amp; Alarippu</strong> — A flower offering of reverence, followed by a rhythmic opening that gradually brings the eyes, neck, hands and body into movement."
   },
   "margam_2": {
-    "en": "<strong>Jatiswaram</strong> &mdash; Pure dance woven from rhythm and melody."
+    "en": "<strong>Jatiswaram</strong> — Pure dance set to musical notes, weaving precise footwork and graceful movement into intricate rhythmic patterns."
   },
   "margam_3": {
-    "en": "<strong>Shabdam</strong> &mdash; Where expression and storytelling begin."
+    "en": "<strong>Shabdam</strong> — A lyrical piece that introduces storytelling through expressive gestures, facial expression and movement."
   },
   "margam_4": {
-    "en": "<strong>Varnam</strong> &mdash; The centrepiece; a demanding blend of rhythm and deep emotion."
+    "en": "<strong>Varnam</strong> — The centrepiece of the recital, combining demanding rhythmic sequences with expressive storytelling and emotion."
   },
   "margam_5": {
-    "en": "<strong>Padam &amp; Javali</strong> &mdash; Lyrical pieces rich in <em>abhinaya</em> (expression)."
+    "en": "<strong>Mahishasura Mardini</strong> — A tribute to Goddess Durga and her triumph over Mahishasura, celebrating courage, divine strength and the victory of good over evil."
   },
   "margam_6": {
-    "en": "<strong>Thillana</strong> &mdash; A joyous, sparkling finale of rhythm."
+    "en": "<strong>Natyamanjari</strong> — A celebration of dance through rhythm, movement and expression."
   },
   "margam_7": {
-    "en": "<strong>Mangalam</strong> &mdash; A closing blessing of gratitude."
+    "en": "<strong>Own composition: surprise</strong> — An original creation by Sia, kept as a surprise to be revealed on stage."
   },
   "guru_eyebrow": {
     "en": "&#10086; Guru Vandana"
@@ -440,3 +440,5 @@ Object.assign(I18N, {
 
 
 Object.assign(I18N, {"gallery_guru_h": {"en": "With her Guru"}, "gallery_guru_note": {"en": "Moments of recognition with Dr. Sanjukta Banerjee."}});
+
+Object.assign(I18N, {margam_8: {en: "<strong>Thillana</strong> — A vibrant finale of brisk footwork, sculptural poses and joyful rhythm."}});
