@@ -24,16 +24,16 @@ const I18N = {
     "en": "RSVP"
   },
   "hero_kicker": {
-    "en": "&#10022; With the blessings of the divine &#10022;"
+    "en": "Saugandhikam Dance Academy presents"
   },
   "hero_title": {
-    "en": "Shivanshi <span>&ldquo;Sia&rdquo;</span> Thakur"
+    "en": "<span class=\"hero-intro\">The Arangetram of</span>Shivanshi <span>&ldquo;Sia&rdquo;</span> Thakur"
   },
   "hero_sub": {
-    "en": "presents her <strong>Arangetram</strong>"
+    "en": "A solo Bharatanatyam debut"
   },
   "hero_tag": {
-    "en": "A solo Bharatanatyam debut &mdash; a journey of devotion, discipline &amp; joy"
+    "en": "A journey of devotion, discipline &amp; joy"
   },
   "label_date": {
     "en": "Date"
