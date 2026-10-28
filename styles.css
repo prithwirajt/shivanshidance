@@ -478,3 +478,6 @@ body.lightbox-open { overflow: hidden; }
 .musicians-page main { padding-top: 76px; }
 .musicians-page .section-head h1 { font-size: clamp(2rem, 5vw, 3rem); color: var(--maroon); }
 .musicians-back { text-align: center; padding: 0 1.5rem 3rem; }
+
+/* Full poses in uniform gallery tiles. */
+.dance-portraits .gallery-photo--full img { object-fit: contain; object-position: center; background: var(--ivory-2); }
