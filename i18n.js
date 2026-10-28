@@ -495,3 +495,34 @@ Object.assign(I18N, {
 });
 
 Object.assign(I18N, {musicians_back: {en: "Back to Event Details"}});
+
+
+Object.assign(I18N, {
+  "emcee_title": {
+    "en": "Meet the Emcee"
+  },
+  "emcee_name": {
+    "en": "Indrani Ghosh"
+  },
+  "emcee_intro": {
+    "en": "Guiding us through Sia’s Arangetram."
+  },
+  "emcee_bio1": {
+    "en": "Sia’s Arangetram will be emceed by Indrani Ghosh, a Saugandhikam Dance Academy graduate and undergraduate student at McMaster University. With a deep passion for dance and music, Indrani became the academy’s first Canadian student to complete her Arangetram at the age of 16."
+  },
+  "emcee_bio2": {
+    "en": "Her Arangetram featured both Mohiniyattam and Bharatanatyam. Through learning these two art forms, she fell in love with the range of movements and the rich variety of stories that Indian classical dance can bring to life. Even when she is not performing, Indrani loves attending recitals and appreciating how other dancers interpret music and express themselves through dance."
+  },
+  "emcee_bio3": {
+    "en": "She is honoured to host this programme and guide the audience through Sia’s performances, having watched her grow into a beautiful dancer over the years."
+  },
+  "emcee_linkedin": {
+    "en": "View Indrani’s LinkedIn profile"
+  },
+  "event_emcee_h": {
+    "en": "Emcee"
+  },
+  "event_emcee_p": {
+    "en": "<a href=\"emcee.html\">Meet the emcee</a><br />Indrani Ghosh"
+  }
+});

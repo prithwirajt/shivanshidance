@@ -34,7 +34,7 @@ async function requestLanguage(lang) {
     toggle.setAttribute('aria-busy', 'true');
     status.textContent = 'Loading Bengali…';
     try {
-      const response = await fetch('i18n-bn.json?v=musician-page-20260910');
+      const response = await fetch('i18n-bn.json?v=emcee-20261028');
       if (!response.ok) throw new Error('Language unavailable');
       const entries = await response.json();
       Object.entries(entries).forEach(([key, value]) => {
@@ -127,3 +127,4 @@ window.addEventListener('scroll', () => {
 
 applyLanguage(currentLang);
 if (preferredLang === 'bn') requestLanguage('bn');
+
