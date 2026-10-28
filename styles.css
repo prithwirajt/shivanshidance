@@ -483,13 +483,14 @@ body.lightbox-open { overflow: hidden; }
 .dance-portraits .gallery-photo--full img { object-fit: contain; object-position: center; background: var(--ivory-2); }
 
 
-/* Emcee biography: full portrait beside text, stacked on smaller screens. */
+/* Emcee biography with a centred head-and-upper-body crop. */
 .emcee-profile { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; max-width: 1040px; margin: 0 auto; }
-.emcee-portrait { display: block; width: 100%; height: auto; border-radius: var(--radius); }
+.emcee-photo { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius); }
+.emcee-photo .emcee-portrait { position: absolute; display: block; width: 150%; max-width: none; height: auto; left: 0; top: -4%; margin: 0; }
 .emcee-copy h2 { color: var(--maroon); font-size: 2rem; margin-bottom: 1rem; }
 .emcee-copy p { line-height: 1.8; margin-bottom: 1.25rem; }
 .emcee-copy .btn { white-space: normal; }
 @media (max-width: 700px) {
   .emcee-profile { grid-template-columns: 1fr; }
-  .emcee-portrait { max-width: 360px; margin-inline: auto; }
+  .emcee-photo { max-width: 360px; margin-inline: auto; }
 }

@@ -514,7 +514,7 @@ Object.assign(I18N, {
     "en": "Her Arangetram featured both Mohiniyattam and Bharatanatyam. Through learning these two art forms, she fell in love with the range of movements and the rich variety of stories that Indian classical dance can bring to life. Even when she is not performing, Indrani loves attending recitals and appreciating how other dancers interpret music and express themselves through dance."
   },
   "emcee_bio3": {
-    "en": "She is honoured to host this programme and guide the audience through Sia’s performances, having watched her grow into a beautiful dancer over the years."
+    "en": "She is delighted to host this programme and guide the audience through Sia’s performances, having watched her grow into a beautiful dancer over the years."
   },
   "emcee_linkedin": {
     "en": "View Indrani’s LinkedIn profile"
