@@ -494,3 +494,8 @@ body.lightbox-open { overflow: hidden; }
   .emcee-profile { grid-template-columns: 1fr; }
   .emcee-photo { max-width: 360px; margin-inline: auto; }
 }
+
+/* A smaller dance portrait, centred on the face and upper body. */
+.emcee-photos { display: grid; gap: 1.25rem; justify-items: center; }
+.emcee-dance-photo { position: relative; width: min(100%, 240px); aspect-ratio: 1; overflow: hidden; border-radius: var(--radius); }
+.emcee-dance-photo img { position: absolute; display: block; width: 171.4286%; max-width: none; height: auto; left: -35.7143%; top: -47.3214%; }
