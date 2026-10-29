@@ -111,7 +111,7 @@ const I18N = {
     "en": "Sia’s Arangetram unfolds through the following pieces, from the opening offering to the rhythmic finale."
   },
   "margam_1": {
-    "en": "<strong>Pushpanjali &amp; Alarippu</strong> — A flower offering of reverence, followed by a rhythmic opening that gradually brings the eyes, neck, hands and body into movement."
+    "en": "<strong>Natyamanjari (Pushpanjali)</strong> — An opening flower offering of reverence, invoking blessings and setting the stage for the recital."
   },
   "margam_2": {
     "en": "<strong>Jatiswaram</strong> — Pure dance set to musical notes, weaving precise footwork and graceful movement into intricate rhythmic patterns."
@@ -126,7 +126,7 @@ const I18N = {
     "en": "<strong>Mahishasura Mardini</strong> — A tribute to Goddess Durga and her triumph over Mahishasura, celebrating courage, divine strength and the victory of good over evil."
   },
   "margam_6": {
-    "en": "<strong>Natyamanjari</strong> — A celebration of dance through rhythm, movement and expression."
+    "en": "<strong>Kurathi</strong> — A lively folk dance bringing playful storytelling, spirited gestures and rhythmic movement to the stage."
   },
   "margam_7": {
     "en": "<strong>Own composition: surprise</strong> — An original creation by Sia, kept as a surprise to be revealed on stage."
