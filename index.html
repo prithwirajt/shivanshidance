@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Marcellus&family=Mukta:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=emcee-20261028" />
+<link rel="stylesheet" href="styles.css?v=blessings-20261030" />
 <link rel="manifest" href="manifest.webmanifest" />
 <meta name="theme-color" content="#6b1a1a" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -92,6 +92,7 @@
         <li><a href="#guru" data-i18n="nav_guru">The Guru</a></li>
         <li><a href="#event" data-i18n="nav_event">Event Details</a></li>
         <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+        <li><a href="#blessings" data-i18n="nav_blessings">Blessings</a></li>
         <li><a href="#rsvp" class="nav-cta" data-i18n="nav_rsvp">RSVP</a></li>
         <li>
           <button id="langToggle" class="lang-toggle" aria-label="Switch language">
@@ -349,20 +350,39 @@
 <svg class="line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
     <div id="registrationPending"><h3 data-i18n="rsvp_pending_h">RSVP details coming soon</h3><p data-i18n="rsvp_pending_p">Registration is not open yet. Please check back here for the RSVP link.</p></div>
     <div id="registrationReady" hidden>
-      <a id="eventbriteLink" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="rsvp_eventbrite">RSVP on Eventbrite</a>
-      <p data-i18n="rsvp_external_note">Complete your registration on Eventbrite. Your place is confirmed only when Eventbrite confirms your registration.</p>
+      <a id="rsvpLink" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="rsvp_evite">RSVP on Evite</a>
+      <p data-i18n="rsvp_external_note">Choose Yes or No on Evite. If attending, please check your adult and child counts, including yourself. Your RSVP is saved only when Evite confirms it.</p>
     </div>
   </div>
 </section>
 
-<section id="blessings" class="section section-alt" aria-labelledby="blessingsTitle">
-  <div class="section-head"><h2 id="blessingsTitle" data-i18n="blessings_title">Blessings for Sia</h2></div>
-  <p class="blessings-intro" data-i18n="blessings_intro">A place for kind wishes from family and friends. Messages are published only with permission and after review.</p>
-  <p id="blessingsPending" data-i18n="blessings_pending">The guestbook is opening soon. Message submissions are not available yet.</p>
-  <a id="blessingsSubmit" class="btn btn-primary" hidden target="_blank" rel="noopener noreferrer" data-i18n="blessings_submit">Send a blessing for review</a>
-  <p id="blessingsNotice" hidden data-i18n="blessings_notice">The form opens separately. Please use your first name only and avoid private details. Submitting does not publish your message automatically.</p>
-  <p id="blessingsStatus" role="status" data-i18n="blessings_empty">No blessings have been published yet.</p>
+<section id="blessings" class="section blessings-section" aria-labelledby="blessingsTitle">
+  <div class="section-head"><span class="eyebrow" data-i18n="blessings_eyebrow">With love, from near &amp; far</span><h2 id="blessingsTitle" data-i18n="blessings_title">Blessings for Sia</h2><div class="ornament" aria-hidden="true">❦</div></div>
+  <p class="blessings-intro" data-i18n="blessings_intro">A wish, a memory, a few words from the heart. Whether you can join us or are cheering from afar, your blessings are part of Sia’s journey.</p>
+  <details id="blessingCompose" class="blessing-compose">
+    <summary data-i18n="blessings_compose">I’m here with my blessings</summary>
+    <form id="blessingForm">
+      <p class="blessing-form-intro" data-i18n="blessings_form_intro">Leave a note of up to 200 words. You can send a blessing whether your RSVP is Yes or No.</p>
+      <fieldset>
+        <label for="blessingName" data-i18n="blessings_name">Your first name or family name</label>
+        <input id="blessingName" name="name" maxlength="60" autocomplete="given-name" required />
+        <label for="blessingMessage" data-i18n="blessings_message">Your note or blessing</label>
+        <textarea id="blessingMessage" name="message" rows="6" maxlength="12000" aria-describedby="blessingWordHelp blessingCount" required></textarea>
+        <div class="blessing-count"><span id="blessingWordHelp" data-i18n="blessings_word_help">Maximum 200 words</span><output id="blessingCount" for="blessingMessage" aria-live="polite">0 / 200</output></div>
+        <label class="blessing-consent" for="blessingConsent"><input id="blessingConsent" name="consent" type="checkbox" /><span data-i18n="blessings_consent">You may display my name and blessing on shivanshi.ca after family review. Leave unchecked to send a private note.</span></label>
+        <div class="blessing-honeypot" aria-hidden="true"><label for="blessingWebsite">Website</label><input id="blessingWebsite" name="website" tabindex="-1" autocomplete="off" /></div>
+        <button id="blessingSend" class="btn btn-primary" type="submit" disabled data-i18n="blessings_send">Send my blessing</button>
+        <button id="blessingRetry" class="blessings-text-button" type="button" hidden data-i18n="blessings_retry">Reconnect without losing my note</button>
+      </fieldset>
+      <p id="blessingFormStatus" role="status" aria-live="polite"></p>
+      <p class="blessing-form-note" data-i18n="blessings_form_note">Your note does not change your RSVP. Please confirm attendance and your total party size through <a href="#rsvp">the invitation</a>. Avoid private contact details in public messages.</p>
+    </form>
+    <noscript><p><a href="https://sia-blessings.toastybug.chatgpt.site/">Open the blessings form</a></p></noscript>
+  </details>
+  <div class="blessings-wall-heading"><h3 data-i18n="blessings_wall_title">A circle of love &amp; blessings</h3><p data-i18n="blessings_wall_note">Messages shared with permission and lovingly reviewed by the family.</p></div>
+  <p id="blessingsStatus" role="status" data-i18n="blessings_empty">The first blessings will appear here after family review.</p>
   <div id="blessingsWall" class="blessings-wall"></div>
+  <button id="blessingsRefresh" class="blessings-text-button" type="button" data-i18n="blessings_refresh">Refresh blessings</button>
 </section>
 <!-- ================= FOOTER ================= -->
 <section id="install" class="install-section" aria-labelledby="installTitle">
@@ -396,7 +416,7 @@
   <p class="footer-sub" data-i18n="footer_sub">April 24, 2027 · Lester B. Pearson Memorial Theatre, Brampton<br />Arrival 4:00 PM · Performance 4:30 PM</p>
   <p class="footer-thanks" data-i18n="footer_thanks">With heartfelt gratitude to Guru Dr. Sanjukta Banerjee, our family &amp; friends.</p>
   <div class="footer-links">
-    <a href="#home" data-i18n="nav_home">Home</a><a href="#event" data-i18n="nav_event">Event Details</a><a href="#rsvp" data-i18n="nav_rsvp">RSVP</a><a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+    <a href="#home" data-i18n="nav_home">Home</a><a href="#event" data-i18n="nav_event">Event Details</a><a href="#rsvp" data-i18n="nav_rsvp">RSVP</a><a href="#gallery" data-i18n="nav_gallery">Gallery</a><a href="#blessings" data-i18n="nav_blessings">Blessings</a>
   </div>
   <p class="footer-fine" data-i18n="footer_fine">&#169; 2027 Sia&rsquo;s Arangetram · With love &amp; devotion to dance</p>
 <details id="privacy" class="privacy-note">
@@ -417,12 +437,13 @@
   </div>
 </dialog>
 
-<script src="i18n.js?v=repertoire-20261029"></script>
-<script src="site-config.js?v=site-refresh-20260908"></script>
-<script src="script.js?v=repertoire-20261029"></script>
-<script src="blessings.js?v=site-refresh-20260908" defer></script>
+<script src="i18n.js?v=blessings-20261030"></script>
+<script src="site-config.js?v=blessings-20261030"></script>
+<script src="script.js?v=blessings-20261030"></script>
+<script src="blessings.js?v=blessings-20261030" defer></script>
 <script src="analytics.js?v=site-refresh-20260908" defer></script>
 </body>
 </html>
+
 
 

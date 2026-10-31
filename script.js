@@ -22,6 +22,7 @@ function applyLanguage(lang) {
     el.classList.toggle('active', el.dataset.lang === currentLang);
   });
   renderCountdown();
+  document.dispatchEvent(new Event('sia-language-change'));
 }
 
 let bengaliReady = false;
@@ -34,7 +35,7 @@ async function requestLanguage(lang) {
     toggle.setAttribute('aria-busy', 'true');
     status.textContent = 'Loading Bengali…';
     try {
-      const response = await fetch('i18n-bn.json?v=repertoire-20261029');
+      const response = await fetch('i18n-bn.json?v=blessings-20261030');
       if (!response.ok) throw new Error('Language unavailable');
       const entries = await response.json();
       Object.entries(entries).forEach(([key, value]) => {
@@ -124,23 +125,22 @@ window.addEventListener('scroll', () => {
   document.getElementById('navbar')?.classList.toggle('scrolled', window.scrollY > 20);
 }, { passive: true });
 
-function eventbriteDestination(value) {
+function rsvpDestination(value) {
   if (typeof value !== 'string' || !value.trim()) return null;
   try {
     const url = new URL(value);
+    if (url.protocol !== 'https:' || url.username || url.password || url.port) return null;
     const host = url.hostname.toLowerCase();
-    const allowed = ['eventbrite.com', 'eventbrite.ca'];
-    const validHost = allowed.some(domain => host === domain || host.endsWith('.' + domain));
-    if (url.protocol !== 'https:' || !validHost || url.username || url.password) return null;
-    if (!url.pathname.startsWith('/e/')) return null;
-    return url.href;
+    if (host === 'evite.me' && /^\/[A-Za-z0-9]+\/?$/.test(url.pathname)) return url.href;
+    if (['evite.com', 'www.evite.com'].includes(host) && /^\/event\/[A-Za-z0-9]+\/?$/.test(url.pathname)) return url.href;
+    return null;
   } catch (_) { return null; }
 }
 
-/* Navigation is never treated as a completed registration. */
-const registrationUrl = eventbriteDestination(typeof SITE_CONFIG === 'undefined' ? '' : SITE_CONFIG.eventbriteUrl);
+/* Opening an invitation is not a completed RSVP. */
+const registrationUrl = rsvpDestination(typeof SITE_CONFIG === 'undefined' ? '' : SITE_CONFIG.rsvpUrl);
 if (registrationUrl) {
-  document.getElementById('eventbriteLink').href = registrationUrl;
+  document.getElementById('rsvpLink').href = registrationUrl;
   document.getElementById('registrationReady').hidden = false;
   document.getElementById('registrationPending').hidden = true;
 }
@@ -267,5 +267,6 @@ if (galleryTabs.length) {
   document.querySelector('.gallery-tabs').hidden = false;
   selectGalleryTab(galleryTabs[0]);
 }
+
 
 

@@ -437,12 +437,7 @@ body.lightbox-open { overflow: hidden; }
   .reveal { opacity: 1 !important; transform: none !important; }
 }
 
-#blessings { text-align: center; }
-.blessings-intro, #blessingsNotice { max-width: 650px; margin: 0 auto 1rem; }
-#blessingsStatus { margin-top: 1rem; }
-.blessings-wall { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1rem; margin-top: 1.5rem; text-align: left; }
-.blessings-wall blockquote { padding: 1.5rem; border-left: 3px solid var(--maroon); background: #fff; border-radius: 12px; overflow-wrap: anywhere; }
-.blessings-wall cite { display: block; margin-top: .75rem; font-style: normal; font-weight: 600; }
+
 [hidden] { display: none !important; }
 
 .gallery-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin: 1.5rem 0 2rem; }
@@ -500,3 +495,39 @@ body.lightbox-open { overflow: hidden; }
 .emcee-copy { display: flow-root; }
 .emcee-dance-photo { position: relative; float: right; width: 46%; max-width: 240px; aspect-ratio: 4 / 3; margin: .25rem 0 1rem 1rem; overflow: hidden; border-radius: var(--radius); }
 .emcee-dance-photo img { position: absolute; display: block; width: 111.6279%; max-width: none; height: auto; left: -5.814%; top: -41.8605%; }
+
+
+/* Shared blessings form and guestbook */
+.blessings-section { text-align:center; background:linear-gradient(135deg,#fbf6ec,#f4ead7); }
+.blessings-intro { max-width:680px; margin:0 auto 2rem; color:var(--ink-soft); font-size:1.15rem; }
+.blessing-compose { max-width:740px; margin:0 auto; border:1px solid var(--gold-light); border-radius:16px; background:#fffdf9; box-shadow:0 10px 35px #4a0f0f0a; overflow:hidden; }
+.blessing-compose summary { cursor:pointer; padding:1.4rem; color:var(--maroon); font-family:var(--display); font-size:1.4rem; }
+.blessing-compose summary:hover { background:var(--ivory); }
+.blessing-compose summary:focus-visible { outline:3px solid var(--maroon); outline-offset:-5px; }
+#blessingForm { padding:0 2rem 1.6rem; text-align:left; }
+#blessingForm fieldset { border:0; min-width:0; }
+.blessing-form-intro { margin-bottom:1.25rem; color:var(--ink-soft); }
+#blessingForm label:not(.blessing-consent) { display:block; font-weight:600; margin:1rem 0 .35rem; }
+#blessingForm input:not([type=checkbox]),#blessingForm textarea { display:block; width:100%; padding:.8rem 1rem; border:1px solid #cdbda8; border-radius:8px; font:inherit; color:var(--ink); background:white; }
+#blessingForm textarea { resize:vertical; min-height:155px; }
+#blessingForm input:focus-visible,#blessingForm textarea:focus-visible { outline:2px solid var(--maroon); outline-offset:2px; }
+.blessing-count { display:flex; justify-content:space-between; gap:1rem; font-size:.9rem; color:var(--ink-soft); margin:.35rem 0 1rem; }
+.over-limit { color:#a12222; font-weight:700; }
+.blessing-consent { display:flex; align-items:flex-start; gap:.75rem; font-size:.95rem; line-height:1.55; margin:1rem 0 1.4rem; cursor:pointer; }
+.blessing-consent input { flex:0 0 auto; width:19px; height:19px; margin-top:3px; accent-color:var(--maroon); }
+.blessing-form-note { font-size:.9rem; margin:1rem 0 0; color:var(--ink-soft); }
+#blessingForm a { color:var(--maroon); text-decoration:underline; }
+#blessingFormStatus:not(:empty) { margin-top:1rem; padding:1rem; background:var(--ivory-2); border-radius:8px; }
+#blessingSend:disabled { opacity:.55; cursor:not-allowed; transform:none; box-shadow:none; }
+.blessing-honeypot { position:absolute!important; left:-10000px!important; width:1px;height:1px;overflow:hidden; }
+.blessings-wall-heading { margin:3.5rem auto 1.5rem; }
+.blessings-wall-heading h3 { color:var(--maroon); font-size:1.8rem; margin-bottom:.4rem; }
+.blessings-wall-heading p,#blessingsStatus { color:var(--ink-soft); }
+.blessings-wall { columns:3 280px; column-gap:1.5rem; margin-top:1.5rem; text-align:left; }
+.blessings-wall blockquote { position:relative; break-inside:avoid; display:inline-block; width:100%; margin:0 0 1.5rem; padding:1.4rem 1.7rem 1.7rem; border:1px solid #e6c98a; border-radius:16px 16px 38px 16px; background:#fffdf9; box-shadow:0 6px 20px #4a0f0f08; overflow-wrap:anywhere; }
+.blessing-quote { display:block; font:4rem/1 Georgia,serif; height:2.8rem; color:var(--gold); }
+.blessings-wall blockquote p { white-space:pre-wrap; font-size:1.05rem; }
+.blessings-wall cite { display:block; margin-top:1rem; padding-top:.8rem; border-top:1px solid #e6c98a66; font-style:normal; color:var(--maroon); font-weight:600; }
+.blessings-text-button { border:0; background:transparent; color:var(--maroon); text-decoration:underline; font:inherit; cursor:pointer; padding:.65rem; }
+.blessings-text-button:focus-visible { outline:2px solid var(--maroon); }
+@media(max-width:600px) { #blessingForm {padding:0 1.15rem 1.3rem}.blessing-compose summary{font-size:1.2rem}.blessings-wall{columns:1}.blessings-intro{font-size:1.05rem} }

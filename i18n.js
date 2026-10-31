@@ -526,3 +526,85 @@ Object.assign(I18N, {
     "en": "<a href=\"emcee.html\">Meet the emcee</a><br />Indrani Ghosh"
   }
 });
+
+
+Object.assign(I18N, {
+  "nav_blessings": {
+    "en": "Blessings"
+  },
+  "rsvp_evite": {
+    "en": "RSVP on Evite"
+  },
+  "rsvp_external_note": {
+    "en": "Choose Yes or No on Evite. If attending, please check your adult and child counts, including yourself. Your RSVP is saved only when Evite confirms it."
+  },
+  "blessings_eyebrow": {
+    "en": "With love, from near &amp; far"
+  },
+  "blessings_intro": {
+    "en": "A wish, a memory, a few words from the heart. Whether you can join us or are cheering from afar, your blessings are part of Sia’s journey."
+  },
+  "blessings_compose": {
+    "en": "I’m here with my blessings"
+  },
+  "blessings_form_intro": {
+    "en": "Leave a note of up to 200 words. You can send a blessing whether your RSVP is Yes or No."
+  },
+  "blessings_name": {
+    "en": "Your first name or family name"
+  },
+  "blessings_message": {
+    "en": "Your note or blessing"
+  },
+  "blessings_word_help": {
+    "en": "Maximum 200 words"
+  },
+  "blessings_consent": {
+    "en": "You may display my name and blessing on shivanshi.ca after family review. Leave unchecked to send a private note."
+  },
+  "blessings_send": {
+    "en": "Send my blessing"
+  },
+  "blessings_retry": {
+    "en": "Reconnect without losing my note"
+  },
+  "blessings_form_note": {
+    "en": "Your note does not change your RSVP. Please confirm attendance and your total party size through <a href=\"#rsvp\">the invitation</a>. Avoid private contact details in public messages."
+  },
+  "blessings_wall_title": {
+    "en": "A circle of love &amp; blessings"
+  },
+  "blessings_wall_note": {
+    "en": "Messages shared with permission and lovingly reviewed by the family."
+  },
+  "blessings_empty": {
+    "en": "The first blessings will appear here after family review."
+  },
+  "blessings_refresh": {
+    "en": "Refresh blessings"
+  },
+  "blessings_too_long": {
+    "en": "Please keep your blessing within 200 words."
+  },
+  "blessings_connect_error": {
+    "en": "The form could not connect. Please reconnect and try again; your note is still here."
+  },
+  "blessings_validation": {
+    "en": "Please enter your name and a blessing of 1–200 words."
+  },
+  "blessings_sending": {
+    "en": "Sending your blessing…"
+  },
+  "blessings_wait": {
+    "en": "Please wait a moment and try again. If you have sent several notes, try again later. Your text has been kept."
+  },
+  "blessings_save_error": {
+    "en": "We could not confirm your submission. Please try again; your text is still here."
+  },
+  "blessings_saved_public": {
+    "en": "Thank you! Your blessing has been saved for the family to review before it appears here."
+  },
+  "blessings_saved_private": {
+    "en": "Thank you! Your private note has been saved for the family and will not appear on the website."
+  }
+});

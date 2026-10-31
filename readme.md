@@ -29,27 +29,13 @@ Use visitor-facing “Coming soon” cards for future media. Do not show develop
 - Photos use natural proportions so faces, hands and feet are not cropped.
 - New rehearsal/event photos and the recording are pending; no invented media.
 
-## RSVP — activation still requires the event details
+## RSVP — Evite
 
-The previous form only saved names in each guest’s browser and showed a false confirmation. It has been removed, along with guest-list rendering. No RSVP personal data is collected in the pending state.
+`site-config.js` points `rsvpUrl` to https://evite.me/s9N9E7t89p for the verified Sia Arangetram invitation. Evite stores attendance and adult/child counts privately. Yes and No are enabled; Maybe is disabled. A link click is never presented as a completed RSVP. Guests must submit their reply on Evite and check their total party size, including themselves.
 
-`site-config.js` contains an empty `eventbriteUrl`. Once the organizer provides and verifies the actual HTTPS Eventbrite event URL, set that value. The page then reveals the Eventbrite registration link. It never displays a submission-success message when someone merely opens that link. Until then it honestly says registration is not open.
+Evite has its own RSVP controls; this integration does not claim a custom conditional dropdown or automatic synchronization of Evite-native comments. The invitation links to the shared website blessings form. Do not create a second attendance database.
 
-Before enabling registration:
-
-1. Create or identify the correct event in the organizer’s Eventbrite account, matching the confirmed date, address and schedule. Set ticket capacity and order limits with the organizer.
-2. Capture name and email in the Eventbrite order form. Use ticket quantity as attendee count, with one ticket per person attending.
-3. Add an optional text question for wishes, notes and dietary needs. Verify whether it is collected per order or per attendee.
-4. Configure organizer order notifications to the organizer’s selected email and verify delivery. No organizer email has been provided yet.
-5. Decide how declines will be recorded. Do not create a ticket order for a person who is not attending. Eventbrite registration alone has not been verified to capture accept/decline responses. A separate organizer-approved reply form/service may be required.
-6. Test a registration with consent: verify saved name, email, quantity, notes, attendee confirmation and organizer receipt. Test cancellation/decline using the agreed reply method.
-7. Activate the link only when the appropriate flow works. Never expose account tokens in HTML, JavaScript or GitHub.
-
-This release does NOT claim live Eventbrite registration, saved responses, organizer email delivery or decline capture. Those require the event link and organizer-side setup.
-
-References:
-- https://www.eventbrite.com/help/en-us/articles/347218/how-to-sell-eventbrite-tickets-on-your-website-through-an-embedded-checkout/
-- https://www.eventbrite.com/help/en-us/articles/228823/how-to-create-custom-questions-for-attendees/
+Organizer notification delivery to all requested addresses has not been verified. Do not claim email delivery based on a saved RSVP or stored blessing alone.
 
 ## Publishing
 
@@ -63,11 +49,17 @@ Share https://shivanshi.ca/#install. Android supports a browser install prompt w
 
 Guru image updated from the supplied Guru pic.png, converted to WebP without cropping. Browser favicon and header dancer use Twemoji graphics by Twitter and contributors, licensed CC BY 4.0: https://github.com/jdecked/twemoji and https://creativecommons.org/licenses/by/4.0/.
 
-## Blessings wall — collection not yet enabled
+## Blessings wall — shared service
 
-The page reads reviewed, permission-approved messages from blessings.json. It currently contains no messages. Never put unreviewed messages, contact details, or consent records in this public JSON. Publish only first name and message after obtaining consent; remove a published item on request.
+Both the website form and the Evite “Send a blessing” link use the same service at https://sia-blessings.toastybug.chatgpt.site. `SITE_CONFIG.blessingsApiOrigin` configures the website API origin. GitHub Pages remains the main website host. `blessings.json` is no longer read by the page.
 
-Before enabling SITE_CONFIG.blessingsFormUrl, the organizer must choose and configure a secure submission service with spam protection, private storage, moderation and consent to public display. Test a real authorized submission and organizer retrieval first. Only then set the approved HTTPS form URL. The site never claims clicking this link saves or publishes a message. GitHub Pages does not process form submissions.
+Submission: name plus 1–200 words, optional consent to public display. The server enforces limits and stores all notes privately in D1. Unchecked consent creates a private note. Checked consent creates a pending note; it appears on the public wall only after approval. No raw HTML from guests is rendered. Honeypot, expiring challenge, size limits and rate limits reduce spam.
+
+Family review: https://sia-blessings.toastybug.chatgpt.site/admin. Sign in with ChatGPT using one of the three organizer email accounts configured in the service. The server checks authenticated identity for every admin operation. The public API exposes only names, messages and submission timestamps of approved, consented notes. Private and pending notes are never stored in the public GitHub repository. Approval can be reversed using Hide; private notes cannot be approved.
+
+The review dashboard is shared organizer access, not email notification delivery. Email notifications require a separate verified mail integration.
+
+Service source and migrations are maintained in the Sites project `appgprj_6ae52d83ed1c819187049c3e93a4e2d6`. Do not modify applied migrations or put guest records in source files. Empty guestbook is intentional; do not seed invented guest blessings.
 
 ## Privacy-friendly analytics — activation pending
 
@@ -79,6 +71,7 @@ Setup reference: https://developers.cloudflare.com/web-analytics/get-started/
 
 Each numbered task was committed independently. Canonical URL, Open Graph metadata, event JSON-LD, .ics/Google calendar links, image navigation, mobile focus, lazy Bengali fonts/translations, skip link, off-screen rendering and before/after gallery tabs are implemented. Gold highlights use different shades for dark and light surfaces to preserve contrast.
 
-Pending: organizer-approved blessings submission/moderation service; Cloudflare Web Analytics public site token and dashboard verification. Social URL placeholders are intentionally empty until real profile links are supplied.
+Pending: Cloudflare Web Analytics public site token and dashboard verification. Social URL placeholders are intentionally empty until real profile links are supplied.
 
 Checks: JavaScript syntax; English/Bengali key coverage; unique HTML IDs and anchor targets; event timestamps and calendar CRLF; image dimensions; numeric colour contrast; disabled/Do Not Track/Global Privacy Control analytics behavior. No physical-phone or browser UI test was performed.
+
