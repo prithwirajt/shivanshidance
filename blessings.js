@@ -12,7 +12,7 @@
   const status = document.getElementById('blessingFormStatus');
   const retry = document.getElementById('blessingRetry');
   const endpoint = typeof SITE_CONFIG !== 'undefined' ? SITE_CONFIG.blessingsApiOrigin : '';
-  const expected = 'https://sia-blessings.toastybug.chatgpt.site';
+  const expected = 'https://sia-blessings.nmims-monalisa.chatgpt.site';
   if (endpoint !== expected) return;
   let challenge = '', busy = false, saved = false;
   const words = value => Array.from(value).length;
