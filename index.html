@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Marcellus&family=Mukta:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=blessings-20261030" />
+<link rel="stylesheet" href="styles.css?v=blessings-20261111" />
 <link rel="manifest" href="manifest.webmanifest" />
 <meta name="theme-color" content="#6b1a1a" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -362,13 +362,13 @@
   <details id="blessingCompose" class="blessing-compose">
     <summary data-i18n="blessings_compose">I’m here with my blessings</summary>
     <form id="blessingForm">
-      <p class="blessing-form-intro" data-i18n="blessings_form_intro">Leave a note of up to 200 words. You can send a blessing whether your RSVP is Yes or No.</p>
+      <p class="blessing-form-intro" data-i18n="blessings_form_intro">Leave a note of up to 200 characters. You can send a blessing whether your RSVP is Yes or No.</p>
       <fieldset>
         <label for="blessingName" data-i18n="blessings_name">Your first name or family name</label>
         <input id="blessingName" name="name" maxlength="60" autocomplete="given-name" required />
         <label for="blessingMessage" data-i18n="blessings_message">Your note or blessing</label>
-        <textarea id="blessingMessage" name="message" rows="6" maxlength="12000" aria-describedby="blessingWordHelp blessingCount" required></textarea>
-        <div class="blessing-count"><span id="blessingWordHelp" data-i18n="blessings_word_help">Maximum 200 words</span><output id="blessingCount" for="blessingMessage" aria-live="polite">0 / 200</output></div>
+        <textarea id="blessingMessage" name="message" rows="6" maxlength="400" aria-describedby="blessingWordHelp blessingCount" required></textarea>
+        <div class="blessing-count"><span id="blessingWordHelp" data-i18n="blessings_word_help">Maximum 200 characters</span><output id="blessingCount" for="blessingMessage" aria-live="polite">0 / 200</output></div>
         <label class="blessing-consent" for="blessingConsent"><input id="blessingConsent" name="consent" type="checkbox" /><span data-i18n="blessings_consent">You may display my name and blessing on shivanshi.ca after family review. Leave unchecked to send a private note.</span></label>
         <div class="blessing-honeypot" aria-hidden="true"><label for="blessingWebsite">Website</label><input id="blessingWebsite" name="website" tabindex="-1" autocomplete="off" /></div>
         <button id="blessingSend" class="btn btn-primary" type="submit" disabled data-i18n="blessings_send">Send my blessing</button>
@@ -437,10 +437,10 @@
   </div>
 </dialog>
 
-<script src="i18n.js?v=blessings-20261030"></script>
-<script src="site-config.js?v=blessings-20261030"></script>
-<script src="script.js?v=blessings-20261030"></script>
-<script src="blessings.js?v=blessings-20261030" defer></script>
+<script src="i18n.js?v=blessings-20261111"></script>
+<script src="site-config.js?v=blessings-20261111"></script>
+<script src="script.js?v=blessings-20261111"></script>
+<script src="blessings.js?v=blessings-20261111" defer></script>
 <script src="analytics.js?v=site-refresh-20260908" defer></script>
 </body>
 </html>

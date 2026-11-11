@@ -548,7 +548,7 @@ Object.assign(I18N, {
     "en": "I’m here with my blessings"
   },
   "blessings_form_intro": {
-    "en": "Leave a note of up to 200 words. You can send a blessing whether your RSVP is Yes or No."
+    "en": "Leave a note of up to 200 characters. You can send a blessing whether your RSVP is Yes or No."
   },
   "blessings_name": {
     "en": "Your first name or family name"
@@ -557,7 +557,7 @@ Object.assign(I18N, {
     "en": "Your note or blessing"
   },
   "blessings_word_help": {
-    "en": "Maximum 200 words"
+    "en": "Maximum 200 characters"
   },
   "blessings_consent": {
     "en": "You may display my name and blessing on shivanshi.ca after family review. Leave unchecked to send a private note."
@@ -584,13 +584,13 @@ Object.assign(I18N, {
     "en": "Refresh blessings"
   },
   "blessings_too_long": {
-    "en": "Please keep your blessing within 200 words."
+    "en": "Please keep your blessing within 200 characters."
   },
   "blessings_connect_error": {
     "en": "The form could not connect. Please reconnect and try again; your note is still here."
   },
   "blessings_validation": {
-    "en": "Please enter your name and a blessing of 1–200 words."
+    "en": "Please enter your name and a blessing of 1–200 characters."
   },
   "blessings_sending": {
     "en": "Sending your blessing…"

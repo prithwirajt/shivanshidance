@@ -15,7 +15,7 @@
   const expected = 'https://sia-blessings.toastybug.chatgpt.site';
   if (endpoint !== expected) return;
   let challenge = '', busy = false, saved = false;
-  const words = value => value.trim() ? value.trim().split(/\s+/u).length : 0;
+  const words = value => Array.from(value).length;
   function say(key) { status.dataset.i18n = key; status.textContent = t(key); }
   function countWords() {
     const count = words(message.value);
